@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="/assets/MerchantFields.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/Default.css"/>
+<script type="text/javascript" src="https://cert.mws.acculynk.net/MWS/Scripts/MerchantScript_v1.3.js"></script>
+<script type="text/javascript" src="/assets/jquery-1.8.3.min.js"></script>
+<title>Pin Pad</title>
+</head>
+
+<script language="javascript">
+    function totalamount() {
+        var sum = 0;
+        sum = document.getElementById('txtDebitAmount').value;
+
+        var Total = sum * 1;
+
+        document.getElementById('lblTotalAmount').innerHTML = '$' + Total.toFixed(2);
+        document.getElementById('hdnAmount').value = Total.toFixed(2);
+    }
+    
+    function accu_FunctionResponse(strResponse) {
+        alert("Response from PinPad: " + strResponse);
+		document.getElementById("AccuLynkPinPadResonse").value = strResponse;
+		switch (strResponse) {
+            case 'ACCU000': //PIN was received so merchant can process the authorization
+            	submitSaleComplete();
+			    break;
+            case 'ACCU200': //user pressed 'cancel' button so merchant may process as credit
+            case 'ACCU400': //user was inactive
+            case 'ACCU600': //invalid data was posted to Acculynk
+            case 'ACCU800': //general catch all error
+                Acculynk._modalHide();
+                //WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions('btnPayment', '', true, '', '', false, true))
+                break;
+            case 'ACCU999': //modal popup was opened successfully
+                //no action necessary, but open for merchant to use                
+                break;
+            default:
+                break;
+        }
+    }
+    
+    function submitPayment() {
+        try{
+            var cardNumber = $("#txtDebitCardNumber").val();
+        	if (Acculynk.browserCheck()) {
+	        	$.ajax({
+	                url: "samplepindebitorcredit/processPinPadRequest",
+	                type: "post",
+	                dataType:"json",
+	                data: {"URL_MODE":"UAT", "cardNumber":cardNumber, "expDate":$("#txtDebitCardExpDate").val(), "amount":$("#txtDebitAmount").val()},
+	                error:function(xhRequest, ErrorText, thrownError){
+					    alert("ErrorText: " + ErrorText);
+	                    alert("Response Text: " + xhRequest.responseText);
+	                },
+	                success:function(data){
+	                    if(data.result == 0){
+						    Acculynk.createForm(data.GUID, cardNumber.substr(cardNumber.length - 4, 4), data.modulus, data.exponent);	                    	
+	                    	Acculynk.PINPadLoad();
+	                    	document.getElementById("PNRefNum").value = data.pnref;
+		                }else{
+			                alert("Error: Code: " + data.result + ", Messsage: " + data.message);
+			                document.getElementById("PNRefNum").value = 0;
+		                }
+	                }
+	            });
+	        }else {
+	            alert('Not supporting browser');
+	        }
+        }catch(e){alert(e);}
+        
+    }
+    function submitSaleComplete(){
+	try{
+	var cardNumber = $("#txtDebitCardNumber").val();
+	  $.ajax({
+	                url: "samplepindebitorcredit/pinPadSaleComplete",
+	                type: "post",
+	                dataType:"json",
+	                data: {"URL_MODE":"UAT", "cardNumber":cardNumber, "expDate":$("#txtDebitCardExpDate").val(), "amount":$("#txtDebitAmount").val(),"pnref":document.getElementById("PNRefNum").value},
+	                error:function(xhRequest, ErrorText, thrownError){
+					    Acculynk._modalHide();
+	                    alert("ErrorText: " + ErrorText);
+	                    alert("Response Text: " + xhRequest.responseText);
+	                },
+	                success:function(data){
+					   Acculynk._modalHide();
+	                    if(data.result == 0){
+window.location = "samplepindebitorcredit/pinPadRefund?pnref=" + data.pnref + "&totalAmount=" + $("#txtDebitAmount").val();	 
+	                    	}else{
+			                alert("SALE Completion failed: [Error Code]: " + data.result + ", Messsage: " + data.message);
+			                document.getElementById("PNRefNum").value = 0;
+		                }
+	                }
+	            });
+	
+	  }catch(e){Acculynk._modalHide();alert(e);}
+	}
+    function AccuLynCardMasking() {
+        document.getElementById("txtDebitCardNumber").type = "password";
+    }   
+</script>
+<body>
+    <center>
+        <div id="accu_screen" style="display: none;">
+        </div>
+        <div id="accu_keypad" style="display: none;">
+        </div>
+        <div id="accu_form" style="display: none;">
+        </div>
+        <div id="accu_loading" style="display: none;">
+        </div>
+    </center>
+    
+    <form id="frmSoap" onsubmit="return false;">
+    	<input id="PNRefNum" type="hidden"/>
+	    <input id="AccuLynkPinPadResonse" type="hidden"/>
+	    <div class="formpopup">
+        <!-- BEGIN FORM -->
+        <div class="formpopupTop">
+            <!-- BEGIN FORM TOP -->
+            <div class="formpopupBottom">
+                <!-- BEGIN FORM BOTTOM -->
+                <div>
+                    <label ID="lblError" style="color: red;" ></label>
+                </div>
+                <br />
+                <div id="divSuccess" style="display: none;">
+                    <div>
+                        <label ID="lblMessage"></label>
+                    </div>
+                    <div>
+                        <ol>
+                            <li id="lblRecPNRef">
+                                <label for="PNRef">
+                                    PNRef:
+                                </label>
+                                <label ID="lblPNRef"></label>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="PaymentTypePinDebit">
+                    <ol>
+                        <li>
+                            <label id="Label2">Card Number:</label>
+                            <input type="text" id="txtDebitCardNumber" class="text" value="4637090000158588" size="19"/>
+                        </li>
+                        <li>
+                            <label>Expiration (MMYY):</label>
+                            <input type="text" class="expirydate" id="txtDebitCardExpDate" size="19" value="1215"/>                            
+                        </li>
+                        <li>
+                            <label>Amount:</label>
+                            <input type="text"  id="txtDebitAmount" class="amount" size="12" onblur="totalamount()"/>
+                        </li>
+						
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li></li>
+                        <li id="totalAmount">
+                            <input type="hidden" id="hdnAmount" />
+                            <label>Total Amount:</label><span id="liTotalAmount">
+                            <label id="lblTotalAmount" class="viewamount">$0.00</label></span>
+                        </li>
+                    </ol>
+                </div>
+                <div id="processButton">
+                    <ol>
+                        <li style="height: 70px; margin-bottom: 5px;">
+                            <input type="submit" id="btnPayment" class="button process" value="Payment"
+                                onclick="submitPayment();"/>
+                            <input class="button process" id="Button1" onclick="window.close();" type="button" value="Close" />
+                        </li>
+                        <li></li>
+                    </ol>
+                </div>
+                <div id="RefundButton" style="display: none;">
+                    <ol>
+                        <li style="height: 70px; margin-bottom: 5px;">
+                            <input type="submit" id="btnRefund" class="button process" value="Refund" />
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+	</form>
+</body>
+</html>

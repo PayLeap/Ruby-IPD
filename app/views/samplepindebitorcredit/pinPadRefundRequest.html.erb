@@ -1,0 +1,50 @@
+<%
+require 'Constants'
+require 'TransactProcessDebitOrCreditCard'
+       begin
+	    serverMode = params[:serverMode]
+		
+		if serverMode == 'UAT'
+       url = AppConstants::UAT_SERVER_URL + 'transactservices.svc/ProcessDebitOrCreditCard'
+       username = AppConstants::UAT_USER_NAME
+       password = AppConstants::UAT_TRANSACTION_KEY
+       else
+       url = AppConstants::PRODUCTION_SERVER_URL + 'transactservices.svc/ProcessDebitOrCreditCard'
+       username = AppConstants::PRODUCTION_USER_NAME
+       password = AppConstants::PRODUCTION_TRANSACTION_KEY
+       end
+		
+		transtype = "REFUND"
+        cardnum = ''
+        expdate = ''
+		cvnumber =''
+        amount = params[:amount].to_s
+		nameoncard=''
+		magdata=''
+		pnRef = params[:pnref].to_s
+		extdata=''
+      transactProcessDebitOrCreditCardObj = TransactProcessDebitOrCreditCard.new
+resp = transactProcessDebitOrCreditCardObj.ProcessCreditOrDebitCard(url,username,password,transtype,cardnum,expdate,cvnumber,amount,nameoncard,magdata,pnRef,extdata)
+	
+		
+		jsonResponse = "{"
+		jsonResponse = jsonResponse + "\"result\":\"" + resp["Response"]["Result"].to_s + "\","
+		if(resp["Response"]["Result"] == '00')			
+			jsonResponse = jsonResponse + "\"message\":\"" + resp["Response"]["Message"].to_s + "\","
+			jsonResponse = jsonResponse + "\"status\":\"" + resp["Response"]["Status"].to_s + "\","
+			jsonResponse = jsonResponse + "\"pnref\":\"" + resp["Response"]["PNRef"].to_s + "\""
+		else
+			jsonResponse = jsonResponse + "\"message\":\"" + resp["Response"]["Message"].to_s + "\""
+		end
+		jsonResponse = jsonResponse + "}"
+    rescue Exception => e
+	     errormsg = e.message
+	     errorstring = "Could not connect to internet"
+       if(errormsg.index("nil") > 0)
+         jsonResponse = "{\"result\":\"-1\",\"message\":\""+ errorstring +"\"}"
+       else
+         jsonResponse = "{\"result\":\"-1\",\"message\":\"" + e.message + "\"}"
+        end
+	  end		
+%>
+<%= jsonResponse.html_safe %>

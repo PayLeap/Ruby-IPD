@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<%=stylesheet_link_tag "main"   %>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script language="javascript" src="https://mws.acculynk.net/MWS/Scripts/MerchantScript_v1.3.js" type="text/javascript">
+/* Function to be written by merchant to pr ocess response */
+function accu_FunctionResponse(strResponse){
+switch (strResponse) {
+case 'ACCU000': //PIN was received so merchant can process the authorization
+Acculynk._modalHide();
+break;
+case 'ACCU200': //user pressed 'cancel' button so merchant may process as credit
+Acculynk._modalHide();
+break;
+case 'ACCU400': //user was inactive
+Acculynk._modalHide();
+break;
+case 'ACCU600': //invalid data was posted to Acculynk
+Acculynk._modalHide();
+break;
+case 'ACCU800': //general catch all error
+Acculynk._modalHide();
+break;
+case 'ACCU999': //modal popup was opened successfully
+//no action necessary, but open for merchant to use 
+break;
+default:
+break;
+}
+}
+</script>
+</head>
+<body>
+
+
+<% if(!resp.nil?) 
+if(resp["Response"]["Result"] == "0")
+%>
+
+<center>
+<div id="accu_screen" style="display: none;"></div>
+<div id="accu_keypad" style="display: none;"></div>
+<div id="accu_form" style="display: none;"></div>
+<div id="accu_loading" style="display: none;"></div>
+</center>
+<form>
+<input type="button" value="Start PIN Pad" class="submit" onclick="if(Acculynk.browserCheck()){ Acculynk.createForm('<%=resp["Response"]["GUID"] %>','<%= cvnum %>','<%=resp["Response"]["Modulus"] %>','<%= resp["Response"]["Exponent"] %>'); Acculynk.PINPadLoad();} " />
+</form>
+</body>
+<% 
+else
+ %>
+<b><span style="font-size: 16px;color: red;" ><%= resp["Response"]["Message"] %></span></b></br> 
+<% end 
+end %>
+</html>
+
+

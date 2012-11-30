@@ -1,0 +1,45 @@
+<% 
+require 'Constants'
+require 'TransactProcessDebitOrCreditCard'
+begin
+if params[:URL_MODE] == 'UAT'
+       url = AppConstants::UAT_SERVER_URL + 'transactservices.svc/ProcessDebitOrCreditCard'
+       username = AppConstants::UAT_USER_NAME
+       password = AppConstants::UAT_TRANSACTION_KEY
+   else
+       url = AppConstants::PRODUCTION_SERVER_URL + 'transactservices.svc/ProcessDebitOrCreditCard'
+       username = AppConstants::PRODUCTION_USER_NAME
+       password = AppConstants::PRODUCTION_TRANSACTION_KEY
+     end
+
+transtype = "SALECOMPLETE"
+cardnum = params[:cardNumber].to_s
+expdate = params[:expDate].to_s
+amount = params[:amount].to_s
+nameoncard = ""
+magdata = ""
+pnRef = params[:pnref]
+extdata = ""
+cvnumber =cardnum[-4..-1]
+transactProcessDebitOrCreditCardObj = TransactProcessDebitOrCreditCard.new
+resp = transactProcessDebitOrCreditCardObj.ProcessCreditOrDebitCard(url,username,password,transtype,cardnum,expdate,cvnumber,amount,nameoncard,magdata,pnRef,extdata)
+
+jsonstring = "{" 
+jsonstring = jsonstring +"\"result\":\""+ resp["Response"]["Result"].to_s + "\","
+if(resp["Response"]["Result"].to_s == '00')
+jsonstring =jsonstring +"\"message\":\""+resp["Response"]["Message"].to_s+"\","
+jsonstring =jsonstring +"\"pnref\":\""+resp["Response"]["PNRef"].to_s+"\"}"
+else
+jsonstring =jsonstring +"\"message\":\""+resp["Response"]["Message"].to_s+"\"}"
+end
+rescue Exception => e
+ errormsg = e.message
+ errorstring1 = "Could not connect to url"
+if(errormsg.index("nil") > 0)
+   jsonstring = "{\"result\":\"-1\",\"message\":\""+ errorstring1 +"\"}"
+else
+  jsonstring = "{\"result\":\"-1\",\"message\":\"" + e.message + "\"}"
+ end  
+end
+%>
+<%= jsonstring.html_safe %>

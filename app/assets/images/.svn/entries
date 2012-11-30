@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="677"
+   name=""
+   committed-date="2012-11-01T23:00:20.227765Z"
+   url="svn://10.10.8.19/SER-DEV-GFT-RAP/trunk/Acculynk/Ruby_SDK/PayLeapSDK/app/assets/images"
+   last-author="sachin.deshmukh"
+   kind="dir"
+   uuid="fb752104-d5c6-0410-ba0f-53d97f7ac24a"
+   repos="svn://10.10.8.19/SER-DEV-GFT-RAP"
+   revision="750"/>
+<entry
+   committed-rev="677"
+   name="sep_flat.png"
+   text-time="2012-11-08T09:12:09.339105Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="d1b16d1ec5d67a259ead529751ca0dd4"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.323479Z"/>
+<entry
+   committed-rev="677"
+   name="PayLeapRevisedLogo.png"
+   text-time="2012-11-08T09:12:09.339105Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="8a8272e85a1dfcc4acb3dfbf5f63ab88"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.323479Z"/>
+<entry
+   committed-rev="677"
+   name="bg_home.png"
+   text-time="2012-11-08T09:12:09.354730Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="5522279226c3c9d95db02f1203661a00"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.339105Z"/>
+<entry
+   committed-rev="677"
+   name="Thumbs.db"
+   text-time="2012-11-08T09:12:09.354730Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="1494176987cb39c3afa7948c75d066c9"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.339105Z"/>
+<entry
+   committed-rev="677"
+   name="nav_divider.png"
+   text-time="2012-11-08T09:12:09.354730Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="f077b0bbbdb9beb62a3bc31070b468d3"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.339105Z"/>
+</wc-entries>

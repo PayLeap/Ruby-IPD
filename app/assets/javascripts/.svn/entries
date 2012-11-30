@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="697"
+   name=""
+   committed-date="2012-11-03T18:03:57.797416Z"
+   url="svn://10.10.8.19/SER-DEV-GFT-RAP/trunk/Acculynk/Ruby_SDK/PayLeapSDK/app/assets/javascripts"
+   last-author="sachin.deshmukh"
+   kind="dir"
+   uuid="fb752104-d5c6-0410-ba0f-53d97f7ac24a"
+   repos="svn://10.10.8.19/SER-DEV-GFT-RAP"
+   revision="750"/>
+<entry
+   committed-rev="695"
+   name="jquery-1.7.2.min.js"
+   text-time="2012-11-08T09:12:09.479734Z"
+   committed-date="2012-11-03T13:55:22.492380Z"
+   checksum="b8d64d0bc142b3f670cc0611b0aebcae"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.370356Z"/>
+<entry
+   committed-rev="677"
+   name="transactdebitcard.js.coffee"
+   text-time="2012-11-08T09:12:09.510985Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.370356Z"/>
+<entry
+   committed-rev="677"
+   name="transactprocessgiftcard.js.coffee"
+   text-time="2012-11-08T09:12:09.510985Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.370356Z"/>
+<entry
+   committed-rev="694"
+   name="processcreditcardrecurringbilling.js.coffee"
+   text-time="2012-11-08T09:12:09.510985Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.385981Z"/>
+<entry
+   committed-rev="697"
+   name="getcardtrxsummary.js.coffee"
+   text-time="2012-11-08T09:12:09.510985Z"
+   committed-date="2012-11-03T18:03:57.797416Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.385981Z"/>
+<entry
+   committed-rev="694"
+   name="managecontract.js.coffee"
+   text-time="2012-11-08T09:12:09.526611Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.385981Z"/>
+<entry
+   committed-rev="677"
+   name="transactvalidcard.js.coffee"
+   text-time="2012-11-08T09:12:09.526611Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.385981Z"/>
+<entry
+   committed-rev="677"
+   name="welcome.js.coffee"
+   text-time="2012-11-08T09:12:09.526611Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.401607Z"/>
+<entry
+   committed-rev="677"
+   name="transactvalidcardlength.js.coffee"
+   text-time="2012-11-08T09:12:09.526611Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.401607Z"/>
+<entry
+   committed-rev="694"
+   name="footer.js.coffee"
+   text-time="2012-11-08T09:12:09.526611Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.401607Z"/>
+<entry
+   committed-rev="694"
+   name="managecreditinfo.js.coffee"
+   text-time="2012-11-08T09:12:09.542236Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.401607Z"/>
+<entry
+   committed-rev="695"
+   name="common.js"
+   text-time="2012-11-08T09:12:09.542236Z"
+   committed-date="2012-11-03T13:55:22.492380Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.401607Z"/>
+<entry
+   committed-rev="677"
+   name="transactprocessebtcard.js.coffee"
+   text-time="2012-11-08T09:12:09.542236Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.417232Z"/>
+<entry
+   committed-rev="694"
+   name="urlmerchantcombo.js.coffee"
+   text-time="2012-11-08T09:12:09.542236Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.417232Z"/>
+<entry
+   committed-rev="677"
+   name="posts.js.coffee"
+   text-time="2012-11-08T09:12:09.542236Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.417232Z"/>
+<entry
+   committed-rev="694"
+   name="managecustomer.js.coffee"
+   text-time="2012-11-08T09:12:09.542236Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.417232Z"/>
+<entry
+   committed-rev="697"
+   name="getchecktrx.js.coffee"
+   text-time="2012-11-08T09:12:09.557862Z"
+   committed-date="2012-11-03T18:03:57.797416Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.417232Z"/>
+<entry
+   committed-rev="677"
+   name="application.js"
+   text-time="2012-11-08T09:12:09.589113Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="914299d653efca0c6d0ddab6566d46bc"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.432858Z"/>
+<entry
+   committed-rev="694"
+   name="webserviceresponse.js.coffee"
+   text-time="2012-11-08T09:12:09.589113Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.432858Z"/>
+<entry
+   committed-rev="697"
+   name="getopenbatchsummary.js.coffee"
+   text-time="2012-11-08T09:12:09.589113Z"
+   committed-date="2012-11-03T18:03:57.797416Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.432858Z"/>
+<entry
+   committed-rev="694"
+   name="urlcombo.js.coffee"
+   text-time="2012-11-08T09:12:09.589113Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.432858Z"/>
+<entry
+   committed-rev="694"
+   name="recurringcreditcard.js.coffee"
+   text-time="2012-11-08T09:12:09.604738Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.432858Z"/>
+<entry
+   committed-rev="677"
+   name="header.js.coffee"
+   text-time="2012-11-08T09:12:09.620364Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.448483Z"/>
+<entry
+   committed-rev="697"
+   name="getinfo.js.coffee"
+   text-time="2012-11-08T09:12:09.620364Z"
+   committed-date="2012-11-03T18:03:57.797416Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.448483Z"/>
+<entry
+   committed-rev="694"
+   name="processcheckrecurringbilling.js.coffee"
+   text-time="2012-11-08T09:12:09.620364Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.448483Z"/>
+<entry
+   committed-rev="677"
+   name="transactvalidmod10.js.coffee"
+   text-time="2012-11-08T09:12:09.635989Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.448483Z"/>
+<entry
+   committed-rev="694"
+   name="managecheckinfo.js.coffee"
+   text-time="2012-11-08T09:12:09.651615Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.448483Z"/>
+<entry
+   committed-rev="697"
+   name="getcardtrx.js.coffee"
+   text-time="2012-11-08T09:12:09.651615Z"
+   committed-date="2012-11-03T18:03:57.797416Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.464109Z"/>
+<entry
+   committed-rev="694"
+   name="addrecurringcheck.js.coffee"
+   text-time="2012-11-08T09:12:09.651615Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.464109Z"/>
+<entry
+   committed-rev="677"
+   name="transactvalidexpdate.js.coffee"
+   text-time="2012-11-08T09:12:09.651615Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.464109Z"/>
+<entry
+   committed-rev="677"
+   name="transactprocesscheck.js.coffee"
+   text-time="2012-11-08T09:12:09.651615Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.464109Z"/>
+<entry
+   committed-rev="677"
+   name="customtokensample.js.coffee"
+   text-time="2012-11-08T09:12:09.667240Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="efe5c0cd6df81434517a466433aaa853"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.464109Z"/>
+</wc-entries>

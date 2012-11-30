@@ -1,0 +1,953 @@
+﻿/* Manage Reseller - Add Reseller */
+.addReseller li#resellerStatus {position: absolute; top:0em; left: 350px;}
+.addReseller li#resellerRadio {position: absolute; top:0em; left: 476px;}
+.addReseller li#resellerUserName {position: absolute; top:2.5em; left: 350px;}
+.addReseller li#resellerUserName input {position: absolute; left: 130px;}
+.addReseller li#lastName {position: absolute; top:5em; left: 350px;}
+.addReseller li#lastName input {position: absolute; left: 130px;}
+.addReseller li#Fax {position: absolute; top:7.5em; left: 350px;}
+.addReseller li#Fax input {position: absolute; left: 130px;}
+.addReseller li#uRL {position: absolute; top:10em; left: 350px;}
+.addReseller li#uRL input {position: absolute; left: 130px;}
+
+.addReseller li#stateTaxID {position: absolute; top:0em; left: 350px;}
+.addReseller li#stateTaxID input {position: absolute; left: 130px;}
+.addReseller li#ownership {position: absolute; top:2.5em; left: 350px;}
+.addReseller li#ownership input {position: absolute; left: 130px;}
+.addReseller li#businessStartDate {position: absolute; top:5em; left: 350px;}
+.addReseller li#businessStartDate input {position: absolute; left: 130px;}
+.addReseller li#ddlOwnership {position: absolute; top:2.5em; left: 340px;}
+/*.addReseller li#ddlState {position: absolute; top:7.5em; left: 340px;}*/
+
+/* For Address Info User Control */
+.addReseller li#province {position: absolute;top:7.5em; left: 340px;}
+.addReseller li#state {position: absolute;top:7.5em; left: 340px;}
+.addReseller li#otherState {position: absolute;top:7.5em; left: 340px;}
+.addReseller li#liTimeZone {position: absolute;top:10em; left:340px;}
+
+.addReseller li#lblRecruiter {position: absolute; top:0em; left: 350px;}
+.addReseller li#chkRecruiter {position: absolute; top:0em; left: 480px;}
+
+/*Edit Personal Info*/
+.EditPersonalInfoReseller li#lastName {position: absolute; top:0em; left: 350px;}
+.EditPersonalInfoReseller li#lastName input {position: absolute; left: 130px;}
+.EditPersonalInfoReseller li#Fax {position: absolute; top:2.5em; left: 350px;}
+.EditPersonalInfoReseller li#Fax input {position: absolute; left: 130px;}
+.EditPersonalInfoReseller li#uRL {position: absolute; top:5em; left: 350px;}
+.EditPersonalInfoReseller li#uRL input {position: absolute; left: 130px;}
+
+.EditPersonalInfoReseller li#stateTaxID {position: absolute; top:0em; left: 350px;}
+.EditPersonalInfoReseller li#stateTaxID input {position: absolute; left: 130px;}
+.EditPersonalInfoReseller li#ownership {position: absolute; top:2.5em; left: 350px;}
+.EditPersonalInfoReseller li#ownership input {position: absolute; left: 130px;}
+.EditPersonalInfoReseller li#businessStartDate {position: absolute; top:5em; left: 350px;}
+.EditPersonalInfoReseller li#businessStartDate input {position: absolute; left: 130px;}
+.EditPersonalInfoReseller li#ddlOwnership {position: absolute; top:2.5em; left: 340px;}
+/*.addReseller li#ddlState {position: absolute; top:7.5em; left: 340px;}*/
+
+/* For Address Info User Control */
+.EditPersonalInfoReseller li#province {position: absolute;top:7.5em; left: 340px;}
+.EditPersonalInfoReseller li#state {position: absolute;top:7.5em; left: 340px;}
+.EditPersonalInfoReseller li#otherState {position: absolute;top:7.5em; left: 340px;}
+.EditPersonalInfoReseller li#liTimeZone {position: absolute;top:10em; left:340px;}
+
+/**/
+
+/*.addReseller li#postalCode  {position: absolute;top:10.5em; left: 350px;}*/
+/***********************************/
+
+/* Manage Reseller - Find Reseller */
+.findReseller li#company {position: absolute; top:5em; left: 350px;}
+.findReseller li#company input {position: absolute; left: 130px;}
+
+.findReseller li#lastName {position: absolute; top:7.5em; left: 350px;}
+.findReseller li#lastName input {position: absolute; left: 130px;}
+
+.findReseller li#phone {position: absolute; top:10em; left: 350px;}
+.findReseller li#phone input {position: absolute; left: 130px;}
+
+.findReseller li#zip {position: absolute; top:12.5em; left: 350px;}
+.findReseller li#zip input {position: absolute; left: 130px;}
+
+.findReseller li#lblRecruiter {position: absolute; top:0em; left: 350px;}
+.findReseller li#chkRecruiter {position: absolute; top:0em; left: 480px;}
+/*********************************************/
+
+/* Manage Reseller - View Reseller */
+.viewReseller li#editReseller {position: absolute;  right: 20px;}
+.viewReseller li#viewUser {position: absolute; right: 20px;}
+.viewReseller li#allowTranType {position: absolute; top:1.5em; left: 250px;}
+.viewReseller li#allowProcessor {position: absolute; top:1.5em; right: 20px;}
+.viewReseller li#fraudManagement {position: absolute; top:3em; left: 250px;}
+.viewReseller li#riskManagement {position: absolute; top:3em; right: 20px;}
+.viewReseller li#revenueShareAccSetting {position: absolute; top:4.5em; left: 250px;}
+.viewReseller li#feeConfig {position: absolute; top:4.5em; right: 20px;}
+.viewReseller li#liResellerId {position: absolute; top:0em; left: 145px;}
+
+.viewReseller li#liParentResellerName {position: absolute; top:1.5em; left: 145px;}
+.viewReseller li#liResellerName {position: absolute; top:3em; left: 145px;}
+.viewReseller li#status {position: absolute; top:3em; left: 350px;}
+.viewReseller li#status input {position: absolute; left: 130px;}
+.viewReseller li#liStatus {position: absolute; top:3em; left: 480px;}
+.viewReseller li#liPhone {position: absolute; top:4.5em; left: 145px;}
+.viewReseller li#email {position: absolute; top:4.5em; left: 350px;}
+.viewReseller li#email input {position: absolute; left: 130px;}
+.viewReseller li#liEmail {position: absolute; top:4.5em; left: 480px;}
+.viewReseller li#liFirstName {position: absolute; top:0em; left: 145px;}
+.viewReseller li#lastName {position: absolute; top:0em; left: 350px;}
+.viewReseller li#lastName input {position: absolute; left: 130px;}
+.viewReseller li#liLastName {position: absolute; top:0em; left: 480px;}
+.viewReseller li#liCompany {position: absolute; top:1.5em; left: 145px;}
+.viewReseller li#liAddress1 {position: absolute; top:1.5em; left: 145px;}
+.viewReseller li#liAddress2 {position: absolute; top:3em; left: 145px;}
+.viewReseller li#liCity {position: absolute; top:4.5em; left: 145px;}
+.viewReseller li#state {position: absolute; top:4.5em; left: 350px;}
+.viewReseller li#state input {position: absolute; top:4.5em; left: 130px;}
+.viewReseller li#liState {position: absolute; top:4.5em; left: 480px;}
+.viewReseller li#liZip {position: absolute; top:6em; left: 145px;}
+.viewReseller li#country {position: absolute; top:6em; left: 350px;}
+.viewReseller li#country input {position: absolute; left: 130px;}
+.viewReseller li#liCountry {position: absolute; top:6em; left: 480px;}
+.viewReseller li#liFederalTaxID {position: absolute; top:0em; left: 145px;}
+.viewReseller li#stateTaxID {position: absolute; top:0em; left: 350px;}
+.viewReseller li#stateTaxID input {position: absolute; left: 130px;}
+.viewReseller li#liStateTaxID {position: absolute; top:0em; left: 480px;}
+.viewReseller li#liSalesTaxID {position: absolute; top:1.5em; left: 145px;}
+.viewReseller li#ownership {position: absolute; top:1.5em; left: 350px;}
+.viewReseller li#ownership input {position: absolute; left: 130px;}
+.viewReseller li#liOwnership {position: absolute; top:1.5em; left: 480px;}
+.viewReseller li#liEstimatedAnnualSales {position: absolute; top:3em; left: 145px;}
+.viewReseller li#businessStartDate {position: absolute; top:3em; left: 350px;}
+.viewReseller li#businessStartDate input {position: absolute; left: 130px;}
+.viewReseller li#liBusinessStartDate {position: absolute; top:3em; left: 480px;}
+.viewReseller li#liURL {position: absolute; top:6em; left: 145px;}
+.viewReseller li#liPayleapURL {position: absolute; top:7.5em; left: 145px;}
+.viewReseller li#isRecruiter {position: absolute; top:0em; left: 350px;}
+.viewReseller li#isRecruiter input {position: absolute; left: 130px;}
+.viewReseller li#liIsRecruiter {position: absolute; top:0em; left: 480px;}
+
+/***********************************************************/
+
+/* Manage Merchant - Allowed Transaction Types */
+.transactionTypes #divCreaditCards {position: absolute; top:0em; left: 137px; }
+.transactionTypes li#americanExpress {position: absolute; top:0em; left: 270px;}
+.transactionTypes li#visa {position: absolute; top:2.5em; left: 270px;}
+.transactionTypes li#masterCard {position: absolute; top:5em; left: 137px;}
+.transactionTypes li#diner {position: absolute; top:5em; left: 270px;}
+.transactionTypes li#discover {position: absolute; top:7.5em; left: 137px;}
+.transactionTypes li#check {position: absolute; top:10em; }
+.transactionTypes li#web {position: absolute; top:12.5em; left: 137px;}
+.transactionTypes li#tel {position: absolute; top:12.5em; left: 270px;}
+.transactionTypes li#pPD {position: absolute; top:15em; left: 137px;}
+.transactionTypes li#cCD {position: absolute; top:15em; left: 270px;}
+.transactionTypes li#aRC {position: absolute; top:17.5em; left: 137px;}
+.transactionTypes li#bOC {position: absolute; top:17.5em; left: 270px;}
+.transactionTypes li#pOP {position: absolute; top:20em; left: 137px;}
+.transactionTypes li#debit {position: absolute; top:22.5em; }
+.transactionTypes li#eBT {position: absolute; top:25em; }
+.transactionTypes li#cashBenefit {position: absolute; top:27.5em; left: 137px;}
+.transactionTypes li#foodBenefit {position: absolute; top:27.5em; left: 270px;}
+.transactionTypes li#giftCards {position: absolute; top:30em; }
+
+/*.transactionTypes li#americanExpress {position: absolute; top:0em; left: 137px;}
+.transactionTypes li#visa {position: absolute; top:0em; left: 270px;}
+.transactionTypes li#masterCard {position: absolute; top:2.5em; left: 137px;}
+.transactionTypes li#diner {position: absolute; top:2.5em; left: 270px;}
+.transactionTypes li#discover {position: absolute; top:5em; left: 137px;}
+.transactionTypes li#web {position: absolute; top:12.5em; left: 137px;}
+.transactionTypes li#tel {position: absolute; top:12.5em; left: 270px;}
+.transactionTypes li#pPD {position: absolute; top:15em; left: 137px;}
+.transactionTypes li#cCD {position: absolute; top:15em; left: 270px;}
+.transactionTypes li#aRC {position: absolute; top:17.5em; left: 137px;}
+.transactionTypes li#bOC {position: absolute; top:17.5em; left: 270px;}
+.transactionTypes li#pOP {position: absolute; top:20em; left: 137px;}
+.transactionTypes li#cashBenefit {position: absolute; top:27.5em; left: 137px;}
+.transactionTypes li#foodBenefit {position: absolute; top:27.5em; left: 270px;}
+.transactionTypes li#giftCards {position: absolute; top:30em; }*/
+
+
+/***********************************************/
+
+/* Manage Merchant - Add Merchant */
+
+.AddMerchant li#TestMerchant {position: absolute; top:0em; left: 350px;}
+.AddMerchant li#Company{position: absolute; top:2.5em; left: 350px;}
+.AddMerchant li#Company input {position: absolute; left: 130px;}
+.AddMerchant li#lastName {position: absolute; top:5em; left: 350px;}
+.AddMerchant li#lastName input {position: absolute; left: 130px;}
+.AddMerchant li#Fax {position: absolute; top:7.5em; left: 350px;}
+.AddMerchant li#Fax input {position: absolute; left: 130px;}
+.AddMerchant li#URL {position: absolute; top:10em; left: 350px;}
+.AddMerchant li#URL input {position: absolute; left: 130px;}
+
+.AddMerchant li#TaxAmount  {position: absolute;top:6em; left: 350px;}
+.AddMerchant li#InvoiceDuplicate  {position: absolute;top:8.5em; left: 350px;}
+.AddMerchant li#MerchantID  {position: absolute;top:0em; left: 350px;}
+.AddMerchant li#BusinessStartDate  {position: absolute;top:2.5em; left: 350px;}
+.AddMerchant li#StateTaxId  {position: absolute;top:5em; left: 350px;}
+
+/* For Address Info User Control */
+.AddMerchant li#province {position: absolute;top:7.5em; left: 340px;}
+.AddMerchant li#state {position: absolute;top:7.5em; left: 340px;}
+.AddMerchant li#otherState {position: absolute;top:7.5em; left: 340px;}
+.AddMerchant li#liTimeZone {position: absolute;top:10em; left:340px;}
+
+
+/* For Email Notification  */
+.AddMerchant li#liEmailNotification{position: absolute; top:0em; left: 350px;}
+.AddMerchant li#liEmailNotification input {position: absolute; left: 140px;}
+/*.AddMerchant li#postalCode  {position: absolute;top:10.5em; left: 350px;}*/
+
+/* Manage Merchant - Find Merchant */
+
+.SearchMerchant li#Company {position: absolute; top:2.5em; left: 340px;}
+.SearchMerchant li#lastName {position: absolute; top:5em; left: 340px;}
+.SearchMerchant li#Phone {position: absolute; top:7.5em; left: 340px;}
+.SearchMerchant li#postalCode {position: absolute; top:10em; left: 340px;}
+.SearchMerchant li#download {position: absolute; top:0em; left: 300px;} 
+
+/* Manage Merchant - MerchantDataReport */
+
+.MerchantDataReport li#IdTo {position: absolute; top:2.5em; left: 340px;}
+.MerchantDataReport li#lastName {position: absolute; top:7.5em; left: 340px;}
+.MerchantDataReport li#Phone {position: absolute; top:10em; left: 340px;}
+.MerchantDataReport li#postalCode {position: absolute; top:12.5em; left: 340px;}
+.MerchantDataReport li#download {position: absolute; top:0em; left: 300px;} 
+
+/* Manage Merchant - View Merchant */
+
+.ViewMerchant li#liAPILoginId {position: absolute; top:0em; left: 340px;}
+.ViewMerchant li#APILoginId {position: absolute; top:0em;left: 480px;}
+
+.ViewMerchant li#ParentResellerName {position: absolute; top:1.5em; left: 150px;}
+.ViewMerchant li#liViewMerchantId {position: absolute; top:0em; left: 150px;}
+.ViewMerchant li#MerchantName {position: absolute; top:3em; left: 150px;}
+
+.ViewMerchant li#lnkMerchant {position: absolute; top:3em; right:20px;}
+.ViewMerchant li#Status {position: absolute; top:3em; left: 340px;}
+.ViewMerchant li#Phone {position: absolute; top:4.5em; left: 150px;}
+
+
+.ViewMerchant li#labelEmail {position: absolute; top:4.5em; left: 340px;}
+.ViewMerchant li#Email {position: absolute; top:4.5em; left: 480px;}
+
+
+.ViewMerchant li#Fname {position: absolute; top:0em; left: 150px;}
+.ViewMerchant li#lblLastName {position: absolute; top:0em; left: 340px;}
+.ViewMerchant li#LastName {position: absolute; top:0em; left: 480px;}
+.ViewMerchant li#address1 {position: absolute; top:1.5em; left: 150px;}
+.ViewMerchant li#address2 {position: absolute; top:3em; left: 150px;}
+.ViewMerchant li#City {position: absolute; top:4.5em; left: 150px;}
+.ViewMerchant li#Country {position: absolute; top:6em; left: 150px;}
+.ViewMerchant li#State {position: absolute; top:7.5em; left: 150px;}
+
+.ViewMerchant li#liMerchantId {position: absolute; top:0em; left: 340px;}
+.ViewMerchant li#MerchantId {position: absolute; top:0em; left: 480px;}
+.ViewMerchant li#Ownership {position: absolute; top:0em; left: 150px;}
+
+
+.ViewMerchant li#federalTax {position: absolute; top:1.5em; left: 150px;}
+.ViewMerchant li#labelBusinessStartDate {position: absolute; top:1.5em; left: 340px;}
+.ViewMerchant li#BusinessStartDate {position: absolute; top:1.5em; left: 480px;}
+
+.ViewMerchant li#SalesTaxId {position: absolute; top:3em; left: 150px;}
+.ViewMerchant li#labelStateTaxId {position: absolute; top:3em; left: 340px;}
+.ViewMerchant li#StateTaxId {position: absolute; top:3em; left: 480px;}
+
+.ViewMerchant li#AnualSale {position: absolute; top:4.5em; left: 150px;}
+
+
+
+.ViewMerchant li#URL {position: absolute; top:6em; left: 150px;}
+
+
+
+
+/* Tools - Co-Branding */
+
+
+/* Tools -Email Templates */
+
+
+/* Tools -Receipt Templates */
+
+
+/* Preferences - Fraud */
+/*  Preferences--Fraud--IPSetup-------------------------------------*/
+
+.ipsetupterminal li#IP input {position: absolute; width:8em; left: 0px;}
+.ipsetupterminal li#IPAdd {position: absolute; top:4.75em; left: 150px;}
+/*.ipsetupterminal li#PAddress {position: absolute; left: 0px; }*/
+.ipsetupterminal li#PAddress select {position: absolute; left: 0px; }
+.ipsetupterminal li#RemoveSelected {position: absolute; top:8em; left: 300px;}
+.ipsetupterminal li#RemoveAll {position: absolute; top:11em; left: 300px;}
+.ipsetupterminal li#FailureAction {position: absolute; top:15em; left: 0px; }
+.ipsetupterminal li#FailureAction select {position: absolute; left: 140px; }
+
+/*---Preferences--Fraud--CountrySetup-------------------------------------*/
+.countrysetupterminal li#Country select {position: absolute; left: 0px;}
+.countrysetupterminal li#CountryAdd {position: absolute; top:4.6em; left: 180px;}
+.countrysetupterminal li#Countries select {position: absolute; left: 0px;}
+.countrysetupterminal li#RemoveSelected {position: absolute; top:8em; left: 300px;}
+.countrysetupterminal li#RemoveAll {position: absolute; top:11em; left: 300px;}
+.countrysetupterminal li#FailureAction {position: absolute; top:14.75em; left: 0px; }
+.countrysetupterminal li#FailureAction select {position: absolute; left: 140px; }
+
+
+/*----------------------END--------------------------------------*/
+
+
+
+/* Preferences -Risk Management */
+
+
+/* Preferences -Custom Fields */
+
+
+/* Security - Add Role */
+
+/* Security - View Role  */
+
+
+/* Security -Add User */
+
+.adduser li#AddRole { position: absolute; top:0em; left: 340px; }
+.adduser li#AddRole select { position: absolute; left: 130px; }
+
+.adduser li#LName { position: absolute; top:2.5em; left: 340px; }
+.adduser li#LName input { position: absolute; left: 130px; }
+
+.adduser li#ResetPwd { position: absolute; top:5em; left: 340px; }
+
+.adduser li#email { position: absolute; top:7.5em; left: 340px; }
+.adduser li#email input { position: absolute; left: 130px; }
+
+/* For Address Info User Control */
+.adduser li#province {position: absolute;top:7.5em; left: 330px;}
+.adduser li#state {position: absolute;top:7.5em; left: 330px;}
+.adduser li#liTimeZone {position: absolute;top:10em; left:330px;}
+
+/*.adduser li#postalCode  {position: absolute;top:10.5em; left: 340px;}*/
+/***********************************/
+
+
+/* Security -View User */
+
+.viewuser li#LName { position: absolute; top:2.5em; left: 340px; }
+.viewuser li#LName input { position: absolute; left: 130px; }
+
+.viewuser li#EMailId { position: absolute; top:5em; left: 340px; }
+.viewuser li#EMailId input { position: absolute; left: 130px; }
+
+.viewuser li#PostalCode { position: absolute; top:7.5em; left: 340px; }
+.viewuser li#PostalCode input { position: absolute; width:5em; left: 130px; }
+
+
+
+/* Reports - Transaction Summary */
+
+
+/* Reports - Billing Summary */
+
+
+/* Reports - Revenue Share Report */
+
+
+/* Billing - Fees */
+
+.SystemFees li#FeeType1{position: absolute; top:0em;left:350px;}
+.SystemFees li#FeeType1 select{position: absolute; left:100px;}
+.SystemFees li#FeeType2 {position: absolute; top:0em; left:450px;}
+
+
+
+
+/* End of Page related CSSS */
+
+
+
+
+
+/* Admin ---Tools */
+/* --- Audit Trail Log--*/
+
+.auditLog  li#endDate {position: absolute; top:0em; left: 340px;}
+.auditLog  li#targetUserName {position: absolute; top:2.5em; left: 340px;}
+.auditLog  li#targetPartnerID {position: absolute; top:5em; left: 340px;}
+.auditLog  li#ip {position: absolute; top:7.5em; left: 340px;}
+.auditLog  li#lookAtLast input{width:5em;}
+
+
+/*--------Transaction Log---*/
+.trxLog  li#endDate {position: absolute; top:0em; left: 340px;}
+.trxLog  li#lookAtLast input{width:5em;}
+
+.trxLog  li#endTime {position: absolute; top:2.5em; left: 340px;}
+.trxLog  li#userName {position: absolute; top:5em; left: 340px;}
+.trxLog  li#targetRPNum {position: absolute; top:7.5em; left: 340px;}
+
+/*------ Preferences  CCVelocity---*/
+.CCVelocityTerminal li#NumOfTransaction {position: absolute; top:0em; left: 100px;}
+.CCVelocityTerminal li#totalAmntInUSD {position: absolute; top:0em; left: 300px;}
+
+.CCVelocityTerminal li#daily {position: absolute; top:1.2em;}
+.CCVelocityTerminal li#VelocitydailyTrans input{position:absolute; top:1.2em; left: 100px; width:5em;}
+.CCVelocityTerminal li#dailyAmount input{position: absolute; top:-1.4em; left: 300px;}
+
+.CCVelocityTerminal li#weekly {position: absolute; top:3.7em;}
+.CCVelocityTerminal li#weeklyTransaction input{position: absolute; top:-1.8em; left: 100px; width:5em;}
+.CCVelocityTerminal li#weeklyAmount input{position: absolute; top:-4.4em; left: 300px;}
+
+.CCVelocityTerminal li#monthly {position: absolute; top:6.2em;}
+.CCVelocityTerminal li#monthlyTransaction input{position: absolute; top:-4.8em; left: 100px; width:5em;}
+.CCVelocityTerminal li#monthlyAmount input{position: absolute; top:-7.4em; left: 300px;}
+
+.CCVelocityTerminal li#maxAmount {position: absolute; top:-4.9em;}
+.CCVelocityTerminal li#maxAmountPerTransaction input{position: absolute; top:-5.9em; left: 250px;}
+
+.CCVelocityTerminal li#libtnSave input{position: absolute; top:-2.9em; }
+.CCVelocityTerminal li#libtnClear input{position: absolute; top:-5.8em; left: 150px;}
+
+/* Email Template
+---------------------------------------------- */
+.emailTemplate {padding-left:10px;padding-top:10px;}
+.emailTemplate li#lblEmailId {position: absolute; top:0em; left: 137px;}
+.emailTemplate li#txtMessageBody {position: absolute; top:22.5em; left: 140px;}
+.emailTemplate li#mailMergeField {position: absolute; top:9.5em; left: 325px;}
+.emailTemplate li#mailMergeField input {position: absolute; left: 130px;}
+.emailTemplate li#lblFrom {position: absolute; top:0em; left: 93px;}
+.emailTemplate li#lblTo {position: absolute; top:2.5em; left: 93px;}
+.emailTemplate li#lblCC {position: absolute; top:5em; left: 93px;}
+.emailTemplate li#lblBCC {position: absolute; top:7.5em; left: 93px;}
+.emailTemplate li#lblSubject {position: absolute; top:10em; left: 93px;}
+
+/*----Merchant->view Merchant ->Allowed Processors------------------------------------------
+
+.allowedProcessor li#merchantIdInput input {position:absolute; left:175px; top:-2.4em;}
+.allowedProcessor li#clientId {position:absolute; top:2.5em;}
+.allowedProcessor li#clientIdInput input{position:absolute; left:175px; top:-2.6em;}
+.allowedProcessor li#terminalId {position:absolute; top:5em;}
+.allowedProcessor li#terminalIdInput input{position:absolute; left:175px; top:-2.8em;}
+.allowedProcessor li#userId {position:absolute; top:7.5em;}
+.allowedProcessor li#userIdInput input{position:absolute;left:175px; top:-3em; }
+.allowedProcessor li#password {position:absolute; top:10em;}
+.allowedProcessor li#passwordInput input{position:absolute; left:175px;top:-3.2em; }
+.allowedProcessor li#industry {position:absolute; top:12.5em;}
+.allowedProcessor li#industrySelect select{position:absolute; left:175px;top:-3.4em; }
+.allowedProcessor li#processorType {position:absolute; top:15em;}
+.allowedProcessor li#processorTypeSelect select {position:absolute; left:175px; top:-3.3em;}
+.allowedProcessor li#hostBased {position:absolute; top:17.5em;}
+.allowedProcessor li#hostBasedSelect select{position:absolute;left:175px; top:-3.3em; }
+
+.allowedProcessor li#portNumberInput input{position:absolute; left:175px; top:-2.4em;}
+.allowedProcessor li#siteNumber {position:absolute; top:2.5em;}
+.allowedProcessor li#siteNumberInput input{position:absolute; left:175px; top:-2.6em;}
+.allowedProcessor li#terminalNumber {position:absolute; top:5em;}
+.allowedProcessor li#terminalNumberInput input{position:absolute; left:175px; top:-2.8em;}
+.allowedProcessor li#ruleSet {position:absolute; top:7.5em;}
+.allowedProcessor li#ruleSetInput input{position:absolute; top:-3em; left:175px; }         */
+
+
+
+
+
+
+/*----coBranding-----*/
+.coBranding li#themeSelect select {position:absolute;left:140px;top:-2.9em;}
+.coBranding li#rfvTheme {position:absolute;left:88px;top:0em;}
+.coBranding li#logo {position:absolute;left:0px;top:3em;}
+.coBranding li#rfvLogoFileUpload {position:absolute;left:75px;top:3em;}
+.coBranding li#logoFileUpload input {position:absolute;left:140px;top:-2.5em;}
+.coBranding li#supportEmailInput {position:absolute;left:25px;top:0em;}
+.coBranding li#rfvSupportEmail {position:absolute;left:140px;top:0em;}
+.coBranding li#footerContact {position:absolute;left:0px;top:3em;}
+.coBranding li#footerContactInput input{position:absolute;left:165px;top:-2.5em;}
+.coBranding li#rfvFooterInfo {position:absolute;left:158px;top:3em;}
+.coBranding li#contactEmail {position:absolute;left:0px;top:6em;}
+.coBranding li#ContactEmailInput input{position:absolute;left:165px;top:3.2em;}
+.coBranding li#rfvContactEmail {position:absolute;left:140px;top:6em;}
+.coBranding li#supportPhone {position: absolute;top:2.5em; left: 350px;}
+.coBranding li#liPayleapURL {position: absolute;top:5em; left: 145px;}
+
+.coBranding li#liResellerNews {position: absolute;top:0em;  left: 140px;}
+.coBranding li#liMerchantNews {position: absolute;top:5em;  left: 140px;}
+
+
+/* For Address Info User Control */
+.coBranding li#province {position: absolute;top:7.5em; left: 350px;}
+.coBranding li#state {position: absolute;top:7.5em; left: 350px;}
+.coBranding li#otherState {position: absolute;top:7.5em; left: 350px;}
+.coBranding li#liTimeZone {position: absolute;top:10em; left:350px;}
+.coBranding li#Logo {position: absolute;top:0em; left: 400px;}
+
+/*.coBranding li#postalCode  {position: absolute;top:10.5em; left: 350px;}*/
+/***********************************/
+
+
+
+/* Manage Reseller - Revenue Share Account Settings */
+.revenueShareAccountSettings li#account {position: absolute; top:2.5em; left: 350px;}
+.revenueShareAccountSettings li#account input {position: absolute; left: 130px;}
+.revenueShareAccountSettings li#profittoSubReseller {position: absolute; top:2.5em; left: 350px;}
+.revenueShareAccountSettings li#profittoSubReseller input {position: absolute; left: 130px;}
+.revenueShareAccountSettings li#liProfittoReseller {position: absolute; top:2.5em; left: 190px;}
+.revenueShareAccountSettings li#liProfittoSubReseller {position: absolute; top:2.5em; right: 0px;}
+.revenueShareAccountSettings li#FrequencyParam {position: absolute; top:0em; left: 70px;}
+.revenueShareAccountSettings li#liFrequency {position: absolute; top:0em; left: 140px;}
+
+
+
+/*********************************************/
+
+/* Manage Merchant - View Users And Reseller-Security- View User ---*/
+.viewUsers li#liUserName {position: absolute; top:0em; left: 145px;}
+.viewUsers li#status {position: absolute; top:0em; left: 350px;}
+.viewUsers li#status input {position: absolute; left: 130px;}
+.viewUsers li#liStatus {position: absolute; top:0em; left: 480px;}
+.viewUsers li#liEmail {position: absolute; top:1.5em; left: 145px;}
+.viewUsers li#liFirstName {position: absolute; top:0em; left: 145px;}
+.viewUsers li#lastName {position: absolute; top:0em; left: 350px;}
+.viewUsers li#lastName input {position: absolute; left: 130px;}
+.viewUsers li#liLastName {position: absolute; top:0em; left: 480px;}
+.viewUsers li#liAddress1 {position: absolute; top:1.5em; left: 145px;}
+.viewUsers li#liAddress2 {position: absolute; top:3em; left: 145px;}
+.viewUsers li#liCity {position: absolute; top:4.5em; left: 145px;}
+.viewUsers li#state {position: absolute; top:4.5em; left: 350px;}
+.viewUsers li#state input {position: absolute; left: 130px;}
+.viewUsers li#liState {position: absolute; top:4.5em; left: 480px;}
+.viewUsers li#liZip {position: absolute; top:6em; left: 145px;}
+.viewUsers li#country {position: absolute; top:6em; left: 350px;}
+.viewUsers li#country input {position: absolute; left: 130px;}
+.viewUsers li#liCountry {position: absolute; top:6em; left: 480px;}
+
+/***********************************************************/
+
+/*-----------  Transaction Summary   ---*/
+
+.TrxSummary  li#dateRange select {width:25em;}
+.TrxSummary  li#endDate {position: absolute; top:2.5em; left: 340px;}
+.TrxSummary  li#endTime {position: absolute; top:5em; left: 340px;}
+.TrxSummary  li#batchNumber {position: absolute; top:0em; left: 340px;}
+.TrxSummary  li#reseller select {width:25em;}
+.TrxSummary li#download {position: absolute; top:-.25em; left: 300px;} 
+
+
+/*-----------  Residual Report   ---*/
+
+.Residual li#reseller select
+{
+	width: 25em;
+}
+.Residual li#Year
+{
+	position: absolute;
+	top: 0em;
+	left: 160px;
+}
+.Residual li#liShareHolderId a span {position: absolute; top: -.5em; left: 310px;}
+.Residual li#liShareHolderId a span img { display: block; }
+.Residual li#download {position: absolute; top:-.25em; left: 300px;} 
+
+/********************************************************************/
+.txtOldPassword {position: absolute; left: 160px;top:-3px;}
+.txtNewPassword {position: absolute; left: 160px;top:-3px;} 
+.txtConfirmPassword {position: absolute; left: 160px;top:-3px;}
+.btnChangePassword {position: absolute; left: 120px;}
+
+
+/*------------------Revenue Share Information -----------*/
+.ViewRevenueShareInformation  li#dateRange select {width:25em;}
+.ViewRevenueShareInformation  li#endDate {position: absolute; top:2.5em; left: 340px;}
+.ViewRevenueShareInformation  li#endTime {position: absolute; top:5em; left: 340px;}
+.ViewRevenueShareInformation li#custradio {position: absolute; top:0em; left: 137px;}
+
+
+/*   Add Role--------------------------*/
+
+.AddRoleTable
+{
+  text-indent: 40px; font-size: small;
+}
+
+
+
+/*------Change Password-----*/
+
+.changePassword li#oldPassword {position:absolute; left:0px; top:0em} 
+.changePassword li#oldPasswordInput input {position:absolute; left:170px; top:0em}
+.changePassword li#rfvOldPassword {position:absolute; left:90px; top:0em}
+
+.changePassword li#newPassword {position:absolute; left:0px; top:3em} 
+.changePassword li#newPasswordInput input {position:absolute; left:170px; top:0.2em}
+.changePassword li#newPasswordValidators {position:absolute; left:90px; top:3em}
+
+.changePassword li#confirmPassword {position:absolute; left:0px; top:6em} 
+.changePassword li#confirmPasswordInput input {position:absolute; left:170px; top:0.5em}
+.changePassword li#rfvConfirmPassword {position:absolute; left:140px; top:6em}
+
+
+.viewConfiguredTask li#showConfiguredTask {position:absolute; left: 40px; top:0em} 
+.viewConfiguredTask li#addConfiguredTask  {position:absolute; right:10px; top:0em}
+.viewConfiguredTask li#endDate {position: absolute; top:2.5em; left: 350px;}
+.viewConfiguredTask li#endDate input {position: absolute; left: 130px;} 
+.viewConfiguredTask li#liTaskName {position: absolute; top:0em; left: 139px;}
+.addConfiguredTask li#machine {position: absolute; top:0em; left: 350px;}
+.addConfiguredTask li#machine input {position: absolute; left: 130px;}
+.addConfiguredTask li#machineName {position: absolute; top:0em; left: 340px;}
+.addConfiguredTask li#liFrequency {position: absolute; top:5em; left: 160px;}
+.addConfiguredTask li#liYearly {position: absolute; top:5em; left: 320px;}
+
+/*--Rate Plan--*/
+.RatePlan li#newrateplan {position:absolute; left:0px; top:0em}
+.RatePlan li#ratePlanInput input{position:absolute; left:170px; top:0em}
+.RatePlan li#rfvRatePlanName {position:absolute; left:90px; top:0em}
+.RatePlan li#Description {position:absolute; left:0px; top:3em}
+.RatePlan li#DescriptionInput input{position:absolute; left:170px; top:0.2em}
+.RatePlan li#rfvRatePlanDescription {position:absolute; left:90px; top:3em}
+
+/*-- Get All Rate Plan--*/
+
+
+
+/*----------BillingConfig ------View Settings------*/
+
+.BillingConfig li#rdoCreditCard {position:absolute; left:500px;}
+.BillingConfig li#rdoACH {position:absolute; left:500px;}
+
+.BillingConfig li#libankName {position: absolute; top:0em;left:0px; }
+.BillingConfig li#liRouting {position: absolute; top:2.5em;left:0px; }
+.BillingConfig li#rfvRountingNumber {position:absolute; left:200px; top:2.5em}
+.BillingConfig li#liCheckBillingExecution {position: absolute; top:5em;left:0px; }
+.BillingConfig li#liCheckBillingStartDate {position: absolute; top:7.5em;left:0px; }
+.BillingConfig li#liAccount {position: absolute; top:2.5em;left:350px; }
+.BillingConfig li#liAccountType {position: absolute; top:0em;left:350px; }
+.BillingConfig li#rfvAccountNumber {position:absolute; left:200px; top:2.5em}
+.BillingConfig li#revAccountnum {position:absolute; left:200px; top:2.5em}
+.BillingConfig li#liNextCheckBillingDate {position: absolute; top:7.5em;left:490px; }
+
+.BillingConfig li#liCCNumber {position: absolute; top:0em;left:0px; }
+.BillingConfig li#rfvCardNumber {position:absolute; left:200px; top:0em}
+.BillingConfig li#revCardNumber {position:absolute; left:200px; top:0em}
+.BillingConfig li#liCCType {position: absolute; top:2.5em; left:140px;}
+.BillingConfig li#liCCBillingExecution {position: absolute; top:5em;left:0px; }
+.BillingConfig li#liCCBillingStartDate {position: absolute; top:7.5em;left:0px; }
+.BillingConfig li#liExpirationDate {position: absolute; top:0em;left:350px; }
+.BillingConfig li#rfvCardNumber {position:absolute; left:200px; top:0em}
+.BillingConfig li#revCardNumber {position:absolute; left:200px; top:0em}
+.BillingConfig li#liCCBillingNextDate {position: absolute; top:7.5em;left:490px; }
+
+.BillingConfig li#lnkView {position: absolute; top:0em;left:300px; }
+.BillingConfig li#Account {position: absolute; top:2.5em;left:350px; }
+
+.BillingConfig li#BillingNextDate {position: absolute; top:7.5em;left:350px; }
+.BillingConfig li#ExpirationDate {position: absolute; top:2.5em;left:350px; }
+
+.BillingConfig li#CCExpirationDate {position: absolute; top:0em;left:350px; }
+.BillingConfig li#CCBillingNextDate {position: absolute; top:7.5em;left:350px; }
+
+.BillingConfig li#ddlCheckFrequency {position: absolute; top:5em; left: 160px;}
+.BillingConfig li#ddlCCFrequency {position: absolute; top:5em; left: 160px;}
+
+
+/*----Reseller->View Marchant  ->Allowed Processors---------------------------------------
+
+.allowedProcessor li#Processor select {position:absolute; left:175px;top:0.0em; }
+.allowedProcessor li#merchantIdInput input {position:absolute; left:175px; top:-2.4em;}
+.allowedProcessor li#clientId {position:absolute; top:2.5em;}
+.allowedProcessor li#clientIdInput input{position:absolute; left:175px; top:-2.6em;}
+.allowedProcessor li#terminalId {position:absolute; top:5em;}
+.allowedProcessor li#terminalIdInput input{position:absolute; left:175px; top:-2.8em;}
+.allowedProcessor li#userId {position:absolute; top:7.5em;}
+.allowedProcessor li#userIdInput input{position:absolute;left:175px; top:-3em; }
+.allowedProcessor li#password {position:absolute; top:10em;}
+.allowedProcessor li#passwordInput input{position:absolute; left:175px;top:-3.2em; }
+.allowedProcessor li#industry {position:absolute; top:12.5em;}
+.allowedProcessor li#industrySelect select{position:absolute; left:175px;top:-3.4em; }
+.allowedProcessor li#processorType {position:absolute; top:15em;}
+.allowedProcessor li#processorTypeSelect select {position:absolute; left:175px; top:-3.3em;}
+.allowedProcessor li#hostBased {position:absolute; top:17.5em; width:150px}
+.allowedProcessor li#hostBasedSelect select{position:absolute;left:175px; top:-3.3em; }
+
+.allowedProcessor li#portNumberInput input{position:absolute; left:175px; top:-2.4em;}
+.allowedProcessor li#siteNumber {position:absolute; top:2.5em;}
+.allowedProcessor li#siteNumberInput input{position:absolute; left:175px; top:-2.6em;}
+.allowedProcessor li#terminalNumber {position:absolute; top:5em;}
+.allowedProcessor li#terminalNumberInput input{position:absolute; left:175px; top:-2.8em;}
+.allowedProcessor li#ruleSet {position:absolute; top:7.5em;}
+.allowedProcessor li#ruleSetInput input{position:absolute; top:-3em; left:175px; }     ---*/
+
+
+
+
+.allowedProcessor li#liLabel1 {position:absolute; left:0px; top:0em;}
+.allowedProcessor li#li1 {position:absolute; left:100px; top:0em;}
+.allowedProcessor li#liLabel2 {position:absolute; left:0px; top:2.5em;}
+.allowedProcessor li#li2 {position:absolute; left:100px; top:2.5em;}
+.allowedProcessor li#liLabel3 {position:absolute; left:0px; top:5em;}
+.allowedProcessor li#li3 {position:absolute; left:100px; top:5em;}
+.allowedProcessor li#liLabel4 {position:absolute; left:0px; top:7.5em;}
+.allowedProcessor li#li4 {position:absolute; left:100px; top:7.5em;}
+.allowedProcessor li#liLabel5 {position:absolute; left:0px; top:10em;}
+.allowedProcessor li#li5 {position:absolute; left:100px; top:10em;}
+.allowedProcessor li#liLabel6 {position:absolute; left:0px; top:12.5em;}
+.allowedProcessor li#li6 {position:absolute; left:100px; top:12.5em;}
+.allowedProcessor li#liLabel7 {position:absolute; left:0px; top:15em;}
+.allowedProcessor li#li7 {position:absolute; left:100px; top:15em;}
+.allowedProcessor li#liLabel8 {position:absolute; left:0px; top:17.5em;}
+.allowedProcessor li#li8 {position:absolute; left:100px; top:17.5em;}
+.allowedProcessor li#liLabel9 {position:absolute; left:0px; top:20em;}
+.allowedProcessor li#li9 {position:absolute; left:100px; top:20em;}
+.allowedProcessor li#liLabel10 {position:absolute; left:0px; top:22.5em;}
+.allowedProcessor li#li10 {position:absolute; left:100px; top:22.5em;}
+.allowedProcessor li#liLabel11 {position:absolute; left:0px; top:25em;}
+.allowedProcessor li#li11 {position:absolute; left:100px; top:25em;}
+.allowedProcessor li#liLabel12 {position:absolute; left:0px; top:27.5em;}
+.allowedProcessor li#li12 {position:absolute; left:100px; top:27.5em;}
+.allowedProcessor li#liLabel13 {position:absolute; left:0px; top:30em;}
+.allowedProcessor li#li13 {position:absolute; left:100px; top:30em;}
+.allowedProcessor li#liLabel14 {position:absolute; left:0px; top:32.5em;}
+.allowedProcessor li#li14 {position:absolute; left:100px; top:32.5em;}
+.allowedProcessor li#liLabel15 {position:absolute; left:0px; top:35em;}
+.allowedProcessor li#li15 {position:absolute; left:100px; top:35em;}
+.allowedProcessor li#liLabel16 {position:absolute; left:0px; top:37.5em;}
+.allowedProcessor li#li16 {position:absolute; left:100px; top:37.5em;}
+.allowedProcessor li#liLabel17 {position:absolute; left:0px; top:40em;}
+.allowedProcessor li#li17 {position:absolute; left:100px; top:40em;}
+.allowedProcessor li#liLabel18 {position:absolute; left:0px; top:42.5em;}
+.allowedProcessor li#li18 {position:absolute; left:100px; top:42.5em;}
+.allowedProcessor li#liLabel19 {position:absolute; left:0px; top:45em;}
+.allowedProcessor li#li19 {position:absolute; left:100px; top:45em;}
+.allowedProcessor li#liLabel20 {position:absolute; left:0px; top:47.5em;}
+.allowedProcessor li#li20 {position:absolute; left:100px; top:47.5em;}
+
+/*----Admin->Billing Account ->Allowed Processors------------------------------------------*/
+.billingAccountProcessor li#Processor select {position:absolute; left:175px; top:0;}
+.billingAccountProcessor li#checkFundDaysLabel input {position:absolute; left:175px; top:0;}
+.billingAccountProcessor li#ccProcessor select {position:absolute; left:175px; top:0;}
+.billingAccountProcessor li#ccFundDaysLabel input {position:absolute; left:175px; top:0;}
+.billingAccountProcessor li#merchantIdInput input {position:absolute; left:175px; top:-2.4em;}
+.billingAccountProcessor li#clientId {position:absolute; top:2.5em;}
+.billingAccountProcessor li#clientIdInput input{position:absolute; left:175px; top:-2.6em;}
+.billingAccountProcessor li#terminalId {position:absolute; top:5em;}
+.billingAccountProcessor li#terminalIdInput input{position:absolute; left:175px; top:-2.8em;}
+.billingAccountProcessor li#userId {position:absolute; top:7.5em;}
+.billingAccountProcessor li#userIdInput input{position:absolute;left:175px; top:-3em; }
+.billingAccountProcessor li#password {position:absolute; top:10em;}
+.billingAccountProcessor li#passwordInput input{position:absolute; left:175px;top:-3.2em; }
+.billingAccountProcessor li#industry {position:absolute; top:12.5em;}
+.billingAccountProcessor li#industrySelect select{position:absolute; left:175px;top:-3.4em; }
+.billingAccountProcessor li#processorType {position:absolute; top:15em;}
+.billingAccountProcessor li#processorTypeSelect select {position:absolute; left:175px; top:-3.3em;}
+.billingAccountProcessor li#hostBased {position:absolute; top:17.5em;}
+.billingAccountProcessor li#hostBasedSelect select{position:absolute;left:175px; top:-3.3em; }
+
+.billingAccountProcessor li#portNumberInput input{position:absolute; left:175px; top:-2.4em;}
+.billingAccountProcessor li#siteNumber {position:absolute; top:2.5em;}
+.billingAccountProcessor li#siteNumberInput input{position:absolute; left:175px; top:-2.6em;}
+.billingAccountProcessor li#terminalNumber {position:absolute; top:5em;}
+.billingAccountProcessor li#terminalNumberInput input{position:absolute; left:175px; top:-2.8em;}
+.billingAccountProcessor li#ruleSet {position:absolute; top:7.5em;}
+.billingAccountProcessor li#ruleSetInput input{position:absolute; top:-3em; left:175px; }
+
+.billingAccountProcessor li#liLabel1 {position:absolute; left:50px; top:0em}
+.billingAccountProcessor li#li1 {position:absolute; left:175px; top:0em}
+.billingAccountProcessor li#liLabel2 {position:absolute; left:0px; top:2.5em;}
+.billingAccountProcessor li#li2 {position:absolute; left:100px; top:2.5em;}
+.billingAccountProcessor li#liLabel3 {position:absolute; left:0px; top:5em;}
+.billingAccountProcessor li#li3 {position:absolute; left:100px; top:5em;}
+.billingAccountProcessor li#liLabel4 {position:absolute; left:0px; top:7.5em;}
+.billingAccountProcessor li#li4 {position:absolute; left:100px; top:7.5em;}
+.billingAccountProcessor li#liLabel5 {position:absolute; left:0px; top:10em;}
+.billingAccountProcessor li#li5 {position:absolute; left:100px; top:10em;}
+.billingAccountProcessor li#liLabel6 {position:absolute; left:0px; top:12.5em;}
+.billingAccountProcessor li#li6 {position:absolute; left:100px; top:12.5em;}
+.billingAccountProcessor li#liLabel7 {position:absolute; left:0px; top:15em;}
+.billingAccountProcessor li#li7 {position:absolute; left:100px; top:15em;}
+.billingAccountProcessor li#liLabel8 {position:absolute; left:0px; top:17.5em;}
+.billingAccountProcessor li#li8 {position:absolute; left:100px; top:17.5em;}
+.billingAccountProcessor li#liLabel9 {position:absolute; left:0px; top:20em;}
+.billingAccountProcessor li#li9 {position:absolute; left:100px; top:20em;}
+.billingAccountProcessor li#liLabel10 {position:absolute; left:0px; top:22.5em;}
+.billingAccountProcessor li#li10 {position:absolute; left:100px; top:22.5em;}
+
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelACH1 {position:absolute; left:0px; top:0em}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liACH1 {position:absolute; left:30px; top:0em}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelACH2 {position:absolute; left:0px; top:2.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liACH2 {position:absolute; left:30px; top:2.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelACH3 {position:absolute; left:0px; top:5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liACH3 {position:absolute; left:30px; top:5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelACH4 {position:absolute; left:0px; top:7.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liACH4 {position:absolute; left:30px; top:7.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelACH5 {position:absolute; left:0px; top:10em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liACH5 {position:absolute; left:30px; top:10em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelACH6 {position:absolute; left:0px; top:12.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liACH6 {position:absolute; left:30px; top:12.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelACH7 {position:absolute; left:0px; top:15em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liACH7 {position:absolute; left:30px; top:15em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelACH8 {position:absolute; left:0px; top:17.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liACH8 {position:absolute; left:30px; top:17.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelACH9 {position:absolute; left:0px; top:20em}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liACH9 {position:absolute; left:30px; top:20em}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelACH10 {position:absolute; left:0px; top:22.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liACH10 {position:absolute; left:30px; top:22.5em;}
+
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelCC1 {position:absolute; left:0px; top:0em}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liCC1 {position:absolute; left:30px; top:0em}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelCC2 {position:absolute; left:0px; top:2.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liCC2 {position:absolute; left:30px; top:2.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelCC3 {position:absolute; left:0px; top:5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liCC3 {position:absolute; left:30px; top:5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelCC4 {position:absolute; left:0px; top:7.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liCC4 {position:absolute; left:30px; top:7.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelCC5 {position:absolute; left:0px; top:10em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liCC5 {position:absolute; left:30px; top:10em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelCC6 {position:absolute; left:0px; top:12.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liCC6 {position:absolute; left:30px; top:12.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelCC7 {position:absolute; left:0px; top:15em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liCC7 {position:absolute; left:30px; top:15em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelCC8 {position:absolute; left:0px; top:17.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liCC8 {position:absolute; left:30px; top:17.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelCC9 {position:absolute; left:0px; top:20em}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liCC9 {position:absolute; left:30px; top:20em}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liLabelCC10 {position:absolute; left:0px; top:22.5em;}
+.billingAccountProcessor li#ctl00_ContentPlaceHolder1_liCC0 {position:absolute; left:30px; top:22.5em;}
+
+
+/* allowedProcessors ---------Reseller->ManageReseller->ProcessorConfiguration---*/
+
+.allowedProcessors li#li1 {position:absolute; left:30px; top:0em;}
+.allowedProcessors li#liLabel1 {position:absolute; left:0px; top:0em;}
+
+.allowedProcessors li#li2 {position:absolute; left:30px; top:2.5em;}
+.allowedProcessors li#liLabel2 {position:absolute; left:0px; top:2.5em;}
+
+.allowedProcessors li#li3 {position:absolute; left:30px; top:5em;}
+.allowedProcessors li#liLabel3 {position:absolute; left:0px; top:5em;}
+
+.allowedProcessors li#li4 {position:absolute; left:30px; top:7.5em;}
+.allowedProcessors li#liLabel4 {position:absolute; left:0px; top:7.5em;}
+
+.allowedProcessors li#li5 {position:absolute; left:30px; top:10em;}
+.allowedProcessors li#liLabel5 {position:absolute; left:0px; top:10em;}
+
+.allowedProcessors li#li6 {position:absolute; left:30px; top:12.5em;}
+.allowedProcessors li#liLabel6 {position:absolute; left:0px; top:12.5em;}
+
+.allowedProcessors li#li7 {position:absolute; left:30px; top:15em;}
+.allowedProcessors li#liLabel7 {position:absolute; left:0px; top:15em;}
+
+.allowedProcessors li#li8 {position:absolute; left:30px; top:17.5em;}
+.allowedProcessors li#liLabel8 {position:absolute; left:0px; top:17.5em;}
+
+.allowedProcessors li#li9 {position:absolute; left:30px; top:20em;}
+.allowedProcessors li#liLabel9 {position:absolute; left:0px; top:20em;}
+
+.allowedProcessors li#li10 {position:absolute; left:30px; top:22.5em;}
+.allowedProcessors li#liLabel10 {position:absolute; left:0px; top:22.5em;}
+
+/* Find User
+--------------------------------------------*/
+.find li.email { position: absolute; top: 0em; left: 360px;}
+.find li.email input {position:absolute; left: 110px}
+
+.find li.last {position: absolute;  top: 2.5em; left: 360px;}
+.find li.last input {position:absolute; left: 110px}
+
+.find li.phone {position: absolute;  top: 5em; left: 360px;}
+.find li.phone input {position:absolute; left: 110px}
+
+.find li.postal {position: absolute;  top: 7.5em; left: 360px;}
+.find li.postal input {position:absolute; left: 110px}
+
+.find li.endDate { position: absolute; top: 2.5em; left: 360px;}
+.find li.endDate { top: 2.5em; }
+.find li.endTime { top: 5em; }
+
+.find li.last { top: 2.5em; }
+.find li.phone { top: 5em; }
+.find li.postal { top: 7.5em; }
+
+.find li.submit { padding-top: 24px; margin-bottom: 32px; }
+
+/*--------***************End******************--------------*/
+
+/* Upload Batch Result File
+----------------------------------------*/
+
+.batchResultFile li#liGateway select {position:absolute;left:110px;top:0em;}
+.batchResultFile li#liLableGateway  {position:absolute;top:0em;}
+
+.batchResultFile li#liLableProcessor {position:absolute;top:0em;}
+.batchResultFile li#liProcessor select {position:absolute;left:110px}
+
+.batchResultFile li#liSelectFile{position:absolute}
+.batchResultFile li#liResultFileUpload input {position:absolute;left:110px}
+
+.batchResultFile li#submit input { left:110px; }
+
+/* Upload Batch Result File
+----------------------------------------*/
+.residualAdjustments li#liSelectUserType{position:absolute}
+.residualAdjustments li#liddlUserType input {position:absolute;left:110px}
+
+.residualAdjustments li#liSelectFile{position:absolute}
+.residualAdjustments li#liResultFileUpload input {position:absolute;left:140px}
+
+.residualAdjustments li#submit input { left:140px; }
+
+.residualAdjustments li#MerchantFileFormat {position: absolute;  right: 20px;}
+.residualAdjustments li#ResellerFileFormat {position: absolute;top:20px;  right: 20px;}
+
+
+/*----------Accrued Commissions ------*/
+.ViewAccruedCommissions li#liAccruedCommissionsTotal {position:absolute;left:180px;top:0em}
+
+
+.marketingResources li#Back {position: absolute;  top:0em; right: 20px;}
+.marketingResources li#liPath {position: absolute; top:2.5em; left: 40px;}
+
+
+.ViewDisbursementOfCommissions li#PayNow {position: absolute; right: -20px;}
+
+
+/*---------------- Revenue Share Distribution-----------*/
+
+.revenueShareDistribution li#liShareHolderId a span {position: absolute; top: -.5em; left: 310px;}
+.revenueShareDistribution li#liShareHolderId a span img { display: block; }
+
+/*----------------ShareHolder List --------------------*/
+
+.shareHolderList li#liRecruiterLabel {position: absolute; top: 0em; left: 360px;}
+.shareHolderList li#liRecruiter {position: absolute; top: 0em; left: 465px;}
+.shareHolderList li#liLastName {position: absolute; top: 5em; left: 360px;}
+.shareHolderList li#liLastName input {position: absolute; left: 110px;}
+.shareHolderList li#liPhone {position: absolute; top: 7.5em; left: 360px;}
+.shareHolderList li#liPhone input {position: absolute; left: 110px;}
+.shareHolderList li#liZip {position: absolute; top: 10em; left: 360px;}
+.shareHolderList li#liZip input {position: absolute; left: 110px;}
+
+/*---------View Configured MassEmail-------------------- */
+
+.viewConfiguredMassEmail li#ConfiguredNewMassEmail {position:absolute; right:10px; top:0em}
+
+
+/*---------MassEmail Configuration Setting--------------------  */
+
+
+.massEmailConfiguration li#liSendSchedule {position:absolute; top:0em; left: 140px;}
+.massEmailConfiguration li#liNotifyPartiesLabel {position:absolute; top:2.5em; left: 400px;}
+.massEmailConfiguration li#liNotifyParties {position:absolute; top:2.5em; left: 540px;}
+.massEmailConfiguration li#liRecipient {position:absolute; top:0em; left: 140px;}
+.massEmailConfiguration li#liRecipient a span {position: absolute; top: .25em;}
+.massEmailConfiguration li#liBodyValue {position:absolute; top:2.5em; left: 0px; } 
+.massEmailConfiguration li#liBodyValue textarea {position:absolute; left:140px; }
+
+.BoldItalic
+{
+	font-style:italic; font-weight:bold;
+}
+
+.OnlyItalic
+{
+	font-style:italic;font-size:13px; font-weight:bold; font-family:Times New Roman Greek;
+}

@@ -1,0 +1,650 @@
+@import url('Calendar.css');
+/* CSS BROWSER RESET
+---------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body.bodyStyle {
+	font: 12px Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+	color: #505050;
+	background: #F2F2F2 url(../images/brown/body.gif) repeat-x 0 0;
+	text-align: center;
+	padding-bottom: 1in;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+input, textarea, select { 
+	padding: 3px;
+	background: #F0F0F0 url(../images/input-select-textarea.gif) repeat-x 0 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #a3887a #815b48 #a3887a;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+select { background-image: none; }
+input.checkbox, input.radio { background: none; border: none; padding: 0; margin: 0; width: auto !important; }
+input.button { cursor: pointer; width: 120px !important; background-color: #663821 !important; background-image: none !important; border-style: inset; border-width: 1px; color: #FFF; }
+input.longbutton { cursor: pointer; width: 150px !important; background-color: #663821 !important; background-image: none !important; border-style: inset; border-width: 1px; color: #FFF; }
+input.shortbutton { cursor: pointer; width: 50px !important; background-color: #663821 !important; background-image: none !important; border-style: inset; border-width: 1px; color: #FFF; }
+option { background: #FFF; }
+*:first-child+html legend { position: relative; left: -7px; }
+* html legend { position: relative; left: -7px; }
+
+
+a:link, a:visited, a:hover, a:focus, a:active { color: #4e2b19; }
+legend { font-size: 20px; font-weight: 700; color: #000; }
+
+fieldset li, fieldset p { font-size: 14px; }
+tr.even { background-color: #FFF; }
+tr.odd { background-color: #eaddd6; }
+
+/* Common Classes */
+.icon {height:20px; width:20px;}
+.subsection-header {  border-bottom: dotted 1px #ccc;  font-size: 14px;   font-weight: bold;  margin-bottom: 15px;  padding-bottom: 5px;  margin-top: 15px;}
+
+/*Class for calendar*/
+.divCalendar{ cursor: pointer; position: absolute; top: 0; }
+/* End */
+/* CSS LAYOUT
+---------------------------------------------- */
+
+div.container, div.wrap { position: relative; width: 952px; margin: 0 auto; padding-bottom: 1in; text-align: left;  }
+div.wrap { padding-bottom: 0; overflow: auto; }
+/*added clearfix for tooltip - 15jun2009 */
+.clearfix:after { content: "___"; display: block; height:0; clear:both; visibility: hidden; }
+.clearfix { display: block; clear: both; }
+
+/* HEADER
+---------------------------------------------- */
+
+.header div.wrap { height: 112px;  }
+.header { position: relative; height: 112px; margin-bottom: 18px; }
+.header h1 { position: relative; left:20px; }
+.header h1 a { background: url("../CurrentLogo.aspx") no-repeat left center; position: absolute; top: 0; left: 0; width: 240px; height: 110px; display: block; text-indent: -9999px; }
+.header p.help { position: absolute; top: 12px; right: 8px; text-align:right }
+
+/* LOGIN
+---------------------------------------------- */
+
+div.login { text-align: center; margin-top: 41px; }
+div.loginTop { background: url(../images/login-top.gif) no-repeat 0 0; }
+div.loginBottom { background: url(../images/login-bottom.gif) no-repeat bottom left; padding: 48px 0; }
+
+div.login form { background: #FFF url(../images/login.gif) repeat-y 0 0; margin: 0 auto; text-align: left; width: 422px; }
+div.login fieldset { padding: 0 20px; }
+div.login legend { padding-bottom: 32px; }
+div.login li { position: relative; height: 3em; }
+div.login li.submit { height: auto; }
+div.login li.password { height: 5em; }
+
+div.login li input.text { position: absolute; top: -4px; left: 86px; width: 235px; }
+div.login p.remember { position: relative; left: 86px; margin-top: 20px; }
+
+div.login li.submit input {  display: block;  width: 109px;  height: 25px;  margin: 0 0 12px 86px;  left: 50px;  position: absolute;  top: -20px;}
+div.login li.submit a {  margin-left: 86px; left: 37px; position: absolute;  top: 20px;}	
+.login div.error { color: #F03333; margin-bottom: 24px; }
+.login div.error h3 { font-size: 16px; margin-bottom: 3px; font-weight: 700; }
+.login div.error div { line-height: 1.4; }
+.login div.error li { background: url(../images/error-li.gif) no-repeat 0 3px; height: auto; padding-left: 20px; }
+
+.login span.error { color: #F03333; margin-bottom: 24px; }
+.login span.error h3 { font-size: 16px; margin-bottom: 3px; font-weight: 700; }
+.login span.error div { line-height: 1.4; }
+.login span.error li { background: url(../images/error-li.gif) no-repeat 0 3px; height: auto; padding-left: 20px; }
+
+/* Forgot Password
+--------------------------------------------------*/
+
+div.login1 { text-align: center; margin-top: 41px; }
+div.loginTop1 { background: url(../images/login-top.gif) no-repeat 0 0; }
+div.loginBottom1 { background: url(../images/login-bottom.gif) no-repeat bottom left; padding: 48px 0; }
+
+div.login1 form { background: #FFF url(../images/login.gif) repeat-y 0 0; margin: 0 auto; text-align: left; width: 422px; }
+div.login1 fieldset { padding: 0 20px; }
+div.login1 legend { padding-bottom: 32px; }
+div.login1 li { position: relative; height: 3em; }
+div.login1 li input.text { position: absolute; top: -4px; left: 100px; width: 200px; }
+div.login1 p.display { position: relative; left: 0px; margin-top: 0px; font-size: 14px; margin-bottom:10px; line-height: 1.4;}
+div.login1 li.EmailAddress {position: relative; left: 0px; margin-top: 0px; }
+div.login1 li.EmailAddress input {position: relative; left: 20px; margin-top: 0px; top:.25em;}
+
+div.login1 li.submit input {  display: block;  width: 109px;  height: 25px;  margin: 0 0 12px 86px;  left: -30px;  position: absolute;  top: 35px;}
+
+/*input.login { background: url(../images/btn-login.gif) no-repeat 0 0; }*/
+div.login1 li.cancel input {  display: block;  width: 109px;  height: 25px;  margin: 0 0 12px 86px;  left: 125px;  position: absolute;  top: -10px;}	
+
+.login1 div.error { color: #F03333; margin-bottom: 24px; }
+.login1 div.error h3 { font-size: 16px; margin-bottom: 3px; font-weight: 700; }
+.login1 div.error div { line-height: 1.4; }
+.login1 div.error li { background: url(../images/error-li.gif) no-repeat 0 3px; height: auto; padding-left: 20px; }
+
+.login1 span.success { color:#007000; margin-bottom: 24px;position:absolute;left:-1px; }
+
+/*--------------Footer for Login And Forgot Password page--------------*/
+
+p.poweredBy1 {position: absolute; bottom: 50px; right: 5px; font-size: 11px; font-weight: 700; }
+p.poweredBy1 img { position:relative; top: 8px;}
+
+/* SIDEBAR
+---------------------------------------------- */
+
+.sidebar { width: 250px; float: left; margin: 0 0 0 15px; }
+* html .sidebar { display: inline; }
+.sidebarTop { background: url(../images/nav-top.gif) no-repeat 0 0; }
+.sidebarBottom {  background: url(../images/nav-bottom.gif) no-repeat bottom left; }
+
+/* NAV
+---------------------------------------------- */
+
+.nav { background: #FFF url(../images/nav.gif) repeat-y 0 0; width: 233px; text-align: center; margin-bottom: 16px; }
+.nav .sidebarBottom { padding-top: 12px; padding-bottom: 33px; }
+
+.nav h3 {  font-size: 16px; font-weight: 600; color: #000; margin-bottom: 12px; }
+.nav li a { background: url(../images/brown/nav-a.gif) no-repeat 0 0; width: 216px; height: 21px; display: block; }
+.nav li a.active { background: url(../images/brown/nav-a-active.gif) no-repeat 0 0; }
+.nav li li a.active { background-image: none; }
+
+.nav ul { text-align: left; margin: 0 auto; width: 216px; }
+.nav ul ul { margin-bottom: 12px; }
+.nav li { margin-bottom: 4px; }
+.nav li li { border-bottom: #D3D3D3 solid 1px; background-color: #FAFAFA; padding: 4px 21px; margin-bottom: 0; }
+.nav li li a { background-image: none; width: auto; height: auto; }
+
+.nav a span { position: relative; top: 4px; left: 12px; }
+.nav div.hide { display: none; }
+
+.nav a:link, .nav a:visited, .nav a:hover, .nav a:active { color: #FFF; text-decoration: none; font-weight: 600; }
+.nav li li a:link, .nav li li a:visited, .nav li li a:hover, .nav li li a:active { color: #2f2b1a; font-weight: normal; }
+
+/* VCARD
+---------------------------------------------- */
+
+.sidebar div.vcard { background: #FFF url(../images/nav.gif) repeat-y 0 0; width: 233px; line-height: 1.4; }
+.sidebar div.vcard div.sidebarBottom { padding-top: 18px; }
+.sidebar div.vcard div.org { font-size: 16px; font-weight: 600; color: #000; padding-top: 18px; }
+.sidebar div.vcard div.org,
+.sidebar div.vcard div.adr,
+.sidebar div.vcard div.tel { padding: 0 31px; }
+.sidebar div.vcard div div { padding: 0; }
+.sidebar div.vcard div.tel { padding-bottom: 18px; }
+
+/* SUBNAV
+---------------------------------------------- */
+
+.subNav { float: left; width: 686px; height: 51px; position:relative; top:-55px;}
+
+.subNav ul, .subNav li, .subNav a { height: 36px; }
+.subNav ul { background: url(../images/brown/subnav.gif) no-repeat 0 0; }
+
+
+* html .subNav ul { position: relative; width: 100%; }
+* html .subNav li { background-position: top right; }
+.subNav li { float: left; background: url(../images/brown/subnav-li.gif) no-repeat bottom right; }
+.subNav li a { display: block; padding: 12px 16px; height: 24px; }
+
+* html .subNav li a { float: left; }
+.subNav span { position: relative }
+
+.subNav a:link, .subNav a:visited, .subNav a:hover, .subNav a:active { color: #FFF; text-decoration: none; }
+.subNav a:hover { opacity: .75; text-decoration: underline; }
+.subNav a.active { background: url(../images/brown/subnav-a-active.gif) no-repeat 50% 36px; }
+
+/* HOME
+---------------------------------------------- */
+
+.home { background: #FFF url(../images/form.gif); float: left; width: 686px; text-align: center; }
+.home div.formBottom { padding: 24px 0 48px; }
+/*
+.home div.vcard div.org { font-weight: 600; font-size: 24px; color: #000; }
+*/
+.home div.vcard { font-size: 16px; line-height: 1.5; width: 50%; margin: 0 auto; }
+/*
+.home div.tel { padding-bottom: 24px; margin-bottom: 8px; border-bottom: #969696 solid 1px; }
+
+.home div.email a:link,
+.home div.email a:visited,
+.home div.email a:active { font-size: 18px; text-decoration: none; }
+*/
+/* FORM
+---------------------------------------------- */
+
+.form { position: relative;background: #FFF url(../images/form.gif) repeat-y 0 0; float: left; width: 687px; position:relative; top:-50px;}
+.formTop { background: url(../images/form-top.gif) no-repeat 0 0; }
+.formBottom { background: url(../images/form-bottom.gif) no-repeat bottom left; padding: 24px 0 48px; }
+
+.form input.checkbox, .form input.radio { position: relative; top: auto; left: auto; }
+.form input.button { position: relative; top: auto; left: auto; width: 109px; margin-right: 20px;}
+.form div.error { color: #F03333; margin-bottom: 24px; }
+.form div.error h3 { font-size: 16px; margin-bottom: 3px; font-weight: 700; }
+.form div.error div { line-height: 1.4; }
+.form div.error li { background: url(../images/error-li.gif) no-repeat 0 3px; height: auto; padding-left: 20px; }
+
+.form fieldset { margin: 0 20px; }
+.form legend { padding-bottom: 24px; }
+.form label {font-size:13px;}
+
+.form ol { position: relative; width: 100%; }
+.form li { position: relative; height: 2.5em; }
+.form li input,
+.form li select { position: absolute; top: -3px; left: 140px; width: 150px; }
+
+.form li input.amount {width:8em;}
+.form li input.date {width:8em;}
+.form li input.expirydate {width:4em;}
+.form li input.phone {width:8em;}
+.form div#customFields {position: relative; top:3px;}
+.form span.success { color:#007000; margin-bottom: 24px;position:absolute; }
+
+.hide { display: none; }
+
+/* Print FORM 
+---------------------------------------------- */
+
+.printform { position: relative;float: left; width: 687px; position:relative; top:-50px;}
+
+.printform input.checkbox, .form input.radio { position: relative; top: auto; left: auto; }
+.printform input.button { position: relative; top: auto; left: auto; width: 109px; margin-right: 20px;}
+
+.printform fieldset { margin: 0 20px; }
+.printform legend { padding-bottom: 24px; }
+.printform label {font-size:13px;}
+
+.printform ol { position: relative; width: 100%; }
+.printform li { position: relative; height: 2.5em; }
+.printform li input,
+.printform li select { position: absolute; top: -3px; left: 140px; width: 150px; }
+
+.printform li input.amount {width:8em;}
+.printform li input.date {width:8em;}
+.printform li input.expirydate {width:4em;}
+.printform li input.phone {width:8em;}
+.printform div#customFields {position: relative; top:3px;}
+.printform span.success { color:#007000; margin-bottom: 24px;position:absolute; }
+
+
+
+/* VIEWFORM
+---------------------------------------------- */
+
+.viewform { position: relative;background: #FFF url(../images/form.gif) repeat-y 0 0; float: left; width: 686px; position:relative; top:-50px;}
+
+.viewform input.checkbox, .viewform input.radio { position: relative; top: auto; left: auto; }
+.viewform input.button { position: relative; top: auto; left: auto; width: 109px; margin-right: 20px;}
+.viewform div.error { color: #F03333; margin-bottom: 24px; }
+.viewform div.error h3 { font-size: 16px; margin-bottom: 3px; font-weight: 700; }
+.viewform div.error div { line-height: 1.4; }
+.viewform div.error li { background: url(../images/error-li.gif) no-repeat 0 3px; height: auto; padding-left: 20px; }
+
+.viewform fieldset { margin: 0 20px; }
+.viewform legend { padding-bottom: 24px; }
+.viewform label {font-size:13px;}
+
+.viewform ol { position: relative; width: 100%; }
+.viewform li { position: relative; height: 1.5em; }
+.viewform li input,
+.viewform li select { position: absolute; top: -3px; left: 140px; width: 150px; }
+
+.viewform div#customFields {position: relative; top:3px;}
+.viewform span.success { color:#007000; margin-bottom: 24px;position:absolute; }
+
+/* Print FORM Popup 
+---------------------------------------------- */
+.printformpop { position: relative;float: left; width: 686px; position:relative; top:-50px;}
+.printformpop input.checkbox, .viewform input.radio { position: relative; top: auto; left: auto; }
+.printformpop input.button { position: relative; top: auto; left: auto; width: 109px; margin-right: 20px;}
+.printformpop div.error { color: #F03333; margin-bottom: 24px; }
+.printformpop div.error h3 { font-size: 16px; margin-bottom: 3px; font-weight: 700; }
+.printformpop div.error div { line-height: 1.4; }
+.printformpop div.error li { background: url(../images/error-li.gif) no-repeat 0 3px; height: auto; padding-left: 20px; }
+
+.printformpop fieldset { margin: 0 20px; }
+.printformpop legend { padding-bottom: 24px; }
+.printformpop label {font-size:13px;}
+
+.printformpop ol { position: relative; width: 100%; }
+.printformpop li { position: relative; height: 1.5em; }
+.printformpop li input,
+.printformpop li select { position: absolute; top: -3px; left: 140px; width: 150px; }
+
+.printformpop div#customFields {position: relative; top:3px;}
+.printformpop span.success { color:#007000; margin-bottom: 24px;position:absolute; }
+
+/* end of printformpopup */
+
+
+
+
+/* Form Popup
+---------------------------------------------- */
+
+.bodyStylepopup 
+{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #505050;
+	padding-left:10px;
+	padding-top:10px;
+	padding-right : 10px;
+}
+
+.formpopup { position: relative; background: #FFF url(../images/form.gif) repeat-y 0 0; float: left; width: 686px; }
+.formpopupTop { background: url(../images/form-top.gif) no-repeat 0 0; }
+.formpopupBottom { background: url(../images/form-bottom.gif) no-repeat bottom left; padding: 24px 0 0px;}
+.formpopup input.checkbox, .formpopup input.radio { position: relative; top: auto; left: auto; }
+.formpopup input.button { position: relative; top: auto; left: auto; width: 109px; margin-right: 20px;}
+.formpopup div.error { color: #F03333; margin-bottom: 24px; }
+.formpopup div.error h3 { font-size: 16px; margin-bottom: 3px; font-weight: 700; }
+.formpopup div.error div { line-height: 1.4; }
+.formpopup div.error li { background: url(../images/error-li.gif) no-repeat 0 3px; height: auto; padding-left: 20px; }
+
+.formpopup fieldset { margin: 0 20px; }
+.formpopup legend { padding-bottom: 24px; }
+.formpopup label {font-size:13px;}
+
+.formpopup ol { position: relative; width: 100%; }
+.formpopup li { position: relative; height: 2.5em; }
+.formpopup li input,
+.formpopup li select { position: absolute; top: -3px; left: 140px; width: 150px; }
+
+.formpopup li input.amount {width:8em;}
+.formpopup li input.date {width:8em;}
+.formpopup li input.expirydate {width:4em;}
+.formpopup li input.phone {width:8em;}
+.formpopup div#customFields {position: relative; top:3px;}
+.formpopup span.success { color:#007000; font-size:14px; margin-bottom: 24px;position:absolute; }
+
+/*SUBNAV Popup
+---------------------------------------------- */
+
+.subNavPopup { float: left; width: 686px; height: 51px; position:relative; top:0px;}
+
+.subNavPopup ul, .subNavPopup li, .subNavPopup a { height: 36px; }
+.subNavPopup ul { background: url(../images/brown/subnav.gif) no-repeat 0 0; }
+
+
+* html .subNavPopup ul { position: relative; width: 100%; }
+* html .subNavPopup li { background-position: top right; }
+.subNavPopup li { float: left; background: url(../images/brown/subnav-li.gif) no-repeat bottom right; }
+.subNavPopup li a { display: block; padding: 12px 16px; height: 48px; }
+
+* html .subNavPopup li a { float: left; }
+.subNavPopup span { position: relative }
+
+.subNavPopup a:link, .subNavPopup a:visited, .subNavPopup a:hover, .subNavPopup a:active { color: #FFF; text-decoration: none; }
+.subNavPopup a:hover { opacity: .75; text-decoration: underline; }
+.subNavPopup a.active { background: url(../images/brown/subnav-a-active.gif) no-repeat 50% 36px; }
+
+/* View
+---------------------------------------------- */
+fieldset.view div.userCol1, fieldset.view div.userCol2 { float: left; width: 49.9%; }
+
+fieldset.view div.userCol1 table { margin-bottom: 32px; }
+
+fieldset.view ul { line-height: 1.4; }
+fieldset.view ul.userStatus { margin: 24px 0; }
+
+fieldset.view ul.userStatus a:link, fieldset.view ul.userStatus a:visited, fieldset.view ul.userStatus a:hover, fieldset.view ul.userStatus a:active { color: #F03333; }
+
+fieldset.view li { font-size: 12px; }
+fieldset.view li { height: auto; }
+fieldset.view a.edit { position: absolute; top: 24px; right: 24px; }
+
+fieldset.view h3 { color: #000; font-weight: 700; font-size: 16px; margin-bottom: 4px; }
+
+fieldset.view table { width: 100%; }
+fieldset.view td, fieldset.view th { padding: 6px 0; }
+fieldset.view th { font-weight: 700; color: #000; width: 40%; }
+
+/* FOOTER
+---------------------------------------------- */
+p.poweredBy {position: absolute; bottom: 50px; right: 12px; font-size: 11px; font-weight: 700; }
+p.poweredBy img { position: relative; top: 8px; }
+
+/* DEVICE SETUP
+---------------------------------------------- */
+
+.setup li { position: relative; height: 2.5em; }
+.setup label { display: block; width: 140px; }
+.setup li.submit { padding-top: 1em; }
+.setup li.submit input { width: 109px; background: url(../images/btn-save.gif) no-repeat 0 0; }
+.setup select,
+.setup input.text { position: absolute; top: -4px; left: 140px; width: 239px; }
+.setup input.text { width: 161px; }
+
+/* RECEIPT
+---------------------------------------------- */
+
+.receipt legend { padding-bottom: 12px; }
+.receipt p { margin-bottom: 24px; }
+.receipt table { border: solid 1px #333; border-collapse: collapse; }
+
+.receipt th { padding: 6px 12px 6px; }
+.receipt td { padding: 6px 24px 6px; }
+
+.receipt table col { border: #b3a56d solid 1px; }
+
+/* FIND
+---------------------------------------------- */
+
+.find legend { padding-bottom: 15px; }
+.find p.filters { margin-bottom: 24px; }
+
+.find p.note { font-size: 12px; line-height: 1.4; margin-bottom: 24px; color: #999; }
+
+.findTransaction input.text, .form .findTransaction select { left: 92px; }
+.findTransaction input.text { width: 114px; }
+.findTransaction li select { width: 248px;  }
+
+.find.transaction input.text { width: 114px; left: 92px; }
+.find.transaction li select { width: 248px; left: 92px; }
+
+.find.transaction li.col2 { left: 292px; }
+.find.transaction li.col2 input { left: 92px; }
+
+/* BEGIN CC TABLE SUMMARY 
+-----------------------------------------------*/
+
+table.ccSummary { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+table.ccSummary col { width: 15%; border: #b3a56d solid 1px; }
+table.ccSummary caption { font-weight: 700; font-size: 14px; color: #000; padding: 0 20px 6px; }
+table.ccSummary th, table.ccSummary td { text-align: center; padding: 12px 0; }
+table.ccSummary th { text-transform: uppercase; font-size: 11px; font-weight: 600; color: #2E2E2E; }
+table.ccSummary tr.spacer td { padding: 0; width: 100%; height: 22px; }
+
+table.ccSummary col.last { border: none; }
+
+table.ccSummary tr.spacer { background-color: #FFF; }
+
+/* BEGIN RESULTS 
+-----------------------------------------------*/
+
+table.results { width: 100%; border-collapse: collapse; }
+table.results th { text-transform: uppercase; font-weight: 600; font-size: 11px; }
+table.results th,
+table.results td { padding: 6px; }
+table.results td.date { font-size: 9px; }
+table.results td.pid { text-align: center; }
+table.results td.headers { text-transform: uppercase; font-weight: 600; font-size: 11px;  }
+
+* html table.results th,
+* html table.results td { border: #640775 solid 1px;  }
+* html table.results .date { border: none; }
+
+*:first-child+html table.results th,
+*:first-child+html table.results td { border: #640775 solid 1px;  }
+*:first-child+html table.results .date { border: none; }
+
+table.results col { border: #b3a56d solid 1px; }
+
+table.results td.active,
+table.results td.inactive { text-transform: uppercase; font-size: 10px; }
+table.results td.active { color: green; }
+table.results td.inactive { color: red; }
+
+table.results td,tr,th,table { border: #640775 solid 1px;  }  /* 15Jun2009 - added to show borders in IE8 and Mozilla */
+
+table.results tr.even { background-color: #eaddd6; }
+table.results tr.odd { background-color: #FFF; }
+
+/* Begin Results2 
+-------------------------------------------------------*/
+
+table.results2 { width: 100%; border-collapse: collapse; }
+table.results2 th { text-transform: uppercase; font-weight: 600; font-size: 11px; }
+table.results2 th,
+table.results2 td { padding: 6px; }
+table.results2 td.date { font-size: 9px; }
+table.results2 td.pid { text-align: center; }
+table.results2 td.headers { text-transform: uppercase; font-weight: 600; font-size: 11px;  }
+
+* html table.results2 th,
+* html table.results2 td { border: #640775 solid 1px;  }
+* html table.results2 .date { border: none; }
+
+*:first-child+html table.results2 th,
+*:first-child+html table.results2 td { border: #640775 solid 1px;  }
+*:first-child+html table.results2 .date { border: none; }
+
+table.results2 col { border: #b3a56d solid 1px; }
+
+table.results2 td.active,
+table.results2 td.inactive { text-transform: uppercase; font-size: 10px; }
+table.results2 td.active { color: green; }
+table.results2 td.inactive { color: red; }
+table.results2 td,tr,th,table { border: #640775 solid 1px;  }  /* 15Jun2009 - added to show borders in IE8 and Mozilla */
+
+table.results2 tr.even { background-color: #FFF; }
+table.results2 tr.odd  { background-color: #eaddd6; }
+
+/* tool tip fix given by Ocean Agency - 24 Jun 2009*/
+#paymentinfo { position: relative; z-index: 10; }
+.resultsDiv { width: 648px;   border-collapse: collapse;   overflow: scroll; overflow-y: hidden; overflow-x: auto; padding-bottom: 1.6em; padding-left: 0.1em;}
+
+/* View Amount with Doller sign */
+.viewamount { font-size: 20px; font-weight: 600; color: #000;}
+
+.alignright {text-align : right}
+
+/* HELP Styles - New
+---------------------------------------------- */
+
+.helpheader div.wrap { height: 80px;  }
+.helpheader { position: relative; height: 80px; margin-bottom: 5px; }
+.helpheader h1 img {position: absolute; top: 0; left: 20; width: 156px; height: 78px; display: block; text-indent: -9999px; }
+.helpheader p.help { position: absolute; top: 4px; right: 4px; text-align:right }
+
+.bodyStylepopupHelp 
+{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #505050;
+	padding-left:10px;
+	padding-top:10px;
+	padding-right : 10px;
+}
+
+.formpopupHelp { position: relative;background: #FFF url(../images/login.gif) repeat-y 0 0; float: left; width: 422px; }
+.formpopupHelpTop { background: url(../images/login-top.gif) no-repeat 0 0;}
+.formpopupHelpBottom { background: url(../images/login-bottom.gif) no-repeat bottom left; padding: 24px 0 0px;}
+
+.formpopupHelp fieldset { margin: 0 20px; }
+.formpopupHelp legend { padding-bottom: 24px; }
+.formpopupHelp label {font-size:13px;}
+
+.formpopupHelpLeft { position: relative;background: #FFF url(../images/leftHelp.gif) repeat-y 0 0; float: left; width: 255px; }
+.formpopupHelpLeftTop { background: url(../images/leftHelp-top.gif) no-repeat 0 0;}
+.formpopupHelpLeftBottom { background: url(../images/leftHelp-bottom.gif) no-repeat bottom left; padding: 14px 0 0px;}
+
+.formpopupHelpLeft fieldset { margin: 0 10px; }
+.formpopupHelpLeft legend { padding-bottom: 14px; }
+
+.formpopupHelpLeft label {font-size:13px;}
+
+body.bodyStyleHelpTop {
+	font: 12px Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+	color: #505050;
+	background: #F2F2F2 url(../images/brown/body.gif) repeat-x 0 0;
+	text-align: center;
+}
+
+
+/* LANDING
+---------------------------------------------- */
+
+#landingWelcome { margin-left: 20px; color: #000; font-weight: 700; font-size: 16px; margin-bottom: 20px;float: left; }
+#landingAnnounce h3 { color: #000; font-weight: 700; font-size: 16px; margin-bottom: 4px;float:left;}
+#landingDate { margin-right: 20px; float: right; }
+#landingShortcuts { margin: 20px; overflow: hidden; clear: both; }
+
+#landingAnnounce { background: #FFF url(../images/roundedBg.gif) repeat-y 0 0; width: 646px; margin-left: 20px; margin-right:20px;}
+#landingAnnounce .top { background: url(../images/roundedTop.gif) no-repeat 0 0; }
+#landingAnnounce .bottom { background: url(../images/roundedBottom.gif) no-repeat bottom left; padding: 15px 10px 48px 10px; }
+
+.shortcutBox { width: 140px; height: 185px; padding-right: 28px; float: left; text-align: center; overflow: hidden;}
+.shortcutBox a { display: block; width: 100%; height: 100%; text-decoration: none; border: 0;}
+.shortcutIcon { display: block; width: 140px; height: 185px; }
+.shortcutTitle { color: #7c8c99; position:relative; top: -66px; font-size: 12px; font-weight: bold; }
+.shortcutText { color: #7c8c99; position:relative; top: -56px; font-size: 9px; }
+		
+#shortcutVirtualTerminal { background: url('../images/shortcutBackground.gif') no-repeat 0 0; }
+#shortcutInvoicing { background: url('../images/shortcutBackground.gif') no-repeat 0 0; }
+#shortcutReporting { background: url('../images/shortcutBackground.gif') no-repeat 0 0; }
+#shortcutPaymentForm { background: url('../images/shortcutBackground.gif') no-repeat 0 0; padding-right: 0; }
+
+#shortcutVirtualTerminal .shortcutIcon { background: url('../images/brown/shortcutIconVirtualTerminal.gif') no-repeat 0 0; }
+#shortcutInvoicing .shortcutIcon { background: url('../images/brown/shortcutIconInvoicing.gif') no-repeat 0 0; }
+#shortcutReporting .shortcutIcon { background: url('../images/brown/shortcutIconReporting.gif') no-repeat 0 0; }
+#shortcutPaymentForm .shortcutIcon { background: url('../images/brown/shortcutIconPaymentForm.gif') no-repeat 0 0; }
+
+#shortcutFraudSettings { background: url('../images/shortcutBackground.gif') no-repeat 0 0; }
+#shortcutResellerReporting { background: url('../images/shortcutBackground.gif') no-repeat 0 0; }
+#shortcutCoBranding{ background: url('../images/shortcutBackground.gif') no-repeat 0 0; }
+#shortcutUserRoles { background: url('../images/shortcutBackground.gif') no-repeat 0 0; padding-right: 0; }
+
+#shortcutFraudSettings .shortcutIcon { background: url('../images/brown/shortcutIconLock.gif') no-repeat 0 0; }
+#shortcutResellerReporting .shortcutIcon { background: url('../images/brown/shortcutIconPieChart.gif') no-repeat 0 0; }
+#shortcutCoBranding .shortcutIcon { background: url('../images/brown/shortcutIconPaymentForm.gif') no-repeat 0 0; }
+#shortcutUserRoles .shortcutIcon { background: url('../images/brown/shortcutIconNote.gif') no-repeat 0 0; }
+
+
+/*Seal Instruction */
+#SealInstruction { background: #FFF url(../images/roundedBg.gif) repeat-y 0 0; width: 646px; margin-left: 4px; margin-right:20px;}
+#SealInstruction .top { background: url(../images/roundedTop.gif) no-repeat 0 0; }
+#SealInstruction .bottom { background: url(../images/roundedBottom.gif) no-repeat bottom left; padding: 15px 10px 48px 10px; }

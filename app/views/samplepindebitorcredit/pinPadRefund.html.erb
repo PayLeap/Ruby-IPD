@@ -1,0 +1,58 @@
+<%
+	pnref = params[:pnref]	
+	totalAmount = params[:totalAmount]
+%>
+
+<html>
+	<head>
+		<title>Refund page</title>
+		<link rel="stylesheet" type="text/css" href="/assets/MerchantFields.css"/>
+		<link rel="stylesheet" type="text/css" href="/assets/Default.css"/>
+		<script type="text/javascript" src="/assets/jquery-1.8.3.min.js"></script>
+	</head>	
+	
+	<script language="javascript">	    
+	    function submitRefund() {
+		  
+	        try{
+	        	$.ajax({
+	                url: "pinPadRefundRequest",
+	                type: "post",
+	                dataType:"json",
+	                data: {"serverMode":"UAT", "pnref":"<%=pnref%>", "amount":"<%=totalAmount%>"},
+	                error:function(xhRequest, ErrorText, thrownError){
+	                    alert("ErrorText: " + ErrorText);
+	                    alert("Response Text: " + xhRequest.responseText);
+	                },
+	                success:function(data){
+	                    if(data.result == 0){
+						    document.getElementById("pnRefId").innerHTML = data.pnref;	      
+	                    	document.getElementById("afterRefund").style.display = 'block';
+	                    	document.getElementById("beforeRefund").style.display = 'none';
+		                }else{
+			                alert("Error: Code: " + data.result + ", Messsage: " + data.message);
+		                }
+	                }
+	            });
+	        }catch(e){alert(e);}
+	        
+	    }
+</script>
+	
+	<body>
+		<div id="beforeRefund" style="padding-left: 10px;padding-top:20px;">
+			<h5>Authorized</h5><br/>
+			<h5>PNRef:&nbsp;<%=pnref%></h5><br/><br/><br/><br/>
+			<span>Total Amount: </span><label style="color: blue;font-size: x-large;"><%=totalAmount %></label><br/>
+			<input type="submit" id="btnRefund" class="button process" value="Refund"
+                                onclick="submitRefund();"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</div>
+		
+		
+		<div id="afterRefund" style="padding-left: 10px;padding-top:20px;display: none;">
+			<h5>Refunded</h5><br/>
+			<h5>PNRef:&nbsp;<span id="pnRefId"></span></h5><br/><br/>
+			<h5>Total Amount: </h5><label style="color: blue;font-size: x-large;"><%=totalAmount %></label><br/>
+		</div>
+	</body>
+</html>

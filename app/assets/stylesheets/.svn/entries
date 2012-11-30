@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="697"
+   name=""
+   committed-date="2012-11-03T18:03:57.797416Z"
+   url="svn://10.10.8.19/SER-DEV-GFT-RAP/trunk/Acculynk/Ruby_SDK/PayLeapSDK/app/assets/stylesheets"
+   last-author="sachin.deshmukh"
+   kind="dir"
+   uuid="fb752104-d5c6-0410-ba0f-53d97f7ac24a"
+   repos="svn://10.10.8.19/SER-DEV-GFT-RAP"
+   revision="750"/>
+<entry
+   committed-rev="697"
+   name="getopenbatchsummary.css.scss"
+   text-time="2012-11-08T09:12:09.776619Z"
+   committed-date="2012-11-03T18:03:57.797416Z"
+   checksum="5c5f737d0a6e4235ab1165ae9d13c038"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.682866Z"/>
+<entry
+   committed-rev="677"
+   name="transactprocessgiftcard.css.scss"
+   text-time="2012-11-08T09:12:09.792244Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="7b6e42b3c6a84eab78ea75613bac9530"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.682866Z"/>
+<entry
+   committed-rev="694"
+   name="recurringcreditcard.css.scss"
+   text-time="2012-11-08T09:12:09.792244Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="fb16d25fc5d7840eeaedcf8dfea0e70c"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.698491Z"/>
+<entry
+   committed-rev="694"
+   name="managecontract.css.scss"
+   text-time="2012-11-08T09:12:09.807870Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="1846b6a9e9eb6bb03f7973910a79b595"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.698491Z"/>
+<entry
+   committed-rev="697"
+   name="getinfo.css.scss"
+   text-time="2012-11-08T09:12:09.932874Z"
+   committed-date="2012-11-03T18:03:57.797416Z"
+   checksum="87c108baaaec887325dab31757fd1498"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.714117Z"/>
+<entry
+   committed-rev="694"
+   name="footer.css.scss"
+   text-time="2012-11-08T09:12:09.979750Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="adada2bb2387c97ee8972c25164ae3e1"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.729742Z"/>
+<entry
+   committed-rev="694"
+   name="urlmerchantcombo.css.scss"
+   text-time="2012-11-08T09:12:10.011001Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="a2ab0b033a64ee166b347a32a6fda622"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.745368Z"/>
+<entry
+   committed-rev="694"
+   name="addrecurringcheck.css.scss"
+   text-time="2012-11-08T09:12:10.011001Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="5d96c8b824e9b4c2b2cd08adba076999"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.745368Z"/>
+<entry
+   committed-rev="697"
+   name="getcardtrx.css.scss"
+   text-time="2012-11-08T09:12:10.011001Z"
+   committed-date="2012-11-03T18:03:57.797416Z"
+   checksum="7128115beb22d7ae4e50541d0d47326b"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.745368Z"/>
+<entry
+   committed-rev="677"
+   name="posts.css.scss"
+   text-time="2012-11-08T09:12:10.011001Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="9bb43e8417e440b03d69582e6768c7d7"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.745368Z"/>
+<entry
+   committed-rev="694"
+   name="managecustomer.css.scss"
+   text-time="2012-11-08T09:12:10.026627Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="f6ba15fd656bda1ed5cd8330688c64da"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.760993Z"/>
+<entry
+   committed-rev="677"
+   name="customtokensample.css.scss"
+   text-time="2012-11-08T09:12:10.057878Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="3a1c905fbca8e9cfa1f7055530eff006"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.776619Z"/>
+<entry
+   committed-rev="677"
+   name="transactdebitcard.css.scss"
+   text-time="2012-11-08T09:12:09.776619Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="deaeb03027add28bbf4aa0030319da91"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.682866Z"/>
+<entry
+   committed-rev="694"
+   name="urlcombo.css.scss"
+   text-time="2012-11-08T09:12:09.792244Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="ca7647c407d1fa3d0cd3d829801ee03d"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.682866Z"/>
+<entry
+   committed-rev="697"
+   name="getcardtrxsummary.css.scss"
+   text-time="2012-11-08T09:12:09.807870Z"
+   committed-date="2012-11-03T18:03:57.797416Z"
+   checksum="c885a6548f3cf137b9127d1264d2c651"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.698491Z"/>
+<entry
+   committed-rev="694"
+   name="processcreditcardrecurringbilling.css.scss"
+   text-time="2012-11-08T09:12:09.807870Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="a552d17485f9adc8404e877cc9ef2a69"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.698491Z"/>
+<entry
+   committed-rev="677"
+   name="header.css.scss"
+   text-time="2012-11-08T09:12:09.807870Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="801de20cf2c82c1b6a5f4a053179fc55"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.698491Z"/>
+<entry
+   committed-rev="677"
+   name="application.css"
+   text-time="2012-11-08T09:12:09.823495Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="c5428a7e5fece7569534e89df859002c"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.714117Z"/>
+<entry
+   committed-rev="677"
+   name="transactvalidcard.css.scss"
+   text-time="2012-11-08T09:12:09.823495Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="550f38b5238b0391a2f0e2d398253eeb"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.714117Z"/>
+<entry
+   committed-rev="677"
+   name="transactvalidcardlength.css.scss"
+   text-time="2012-11-08T09:12:09.917248Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="96d4bab98a1cd057afe4a3e897813396"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.714117Z"/>
+<entry
+   committed-rev="677"
+   name="welcome.css.scss"
+   text-time="2012-11-08T09:12:09.917248Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="e5b1de3096abea5c8b911dab019e973d"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.714117Z"/>
+<entry
+   committed-rev="694"
+   name="processcheckrecurringbilling.css.scss"
+   text-time="2012-11-08T09:12:09.948499Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="463fa9e268bb60e2ff7831f891c5fa2f"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.729742Z"/>
+<entry
+   committed-rev="694"
+   name="managecreditinfo.css.scss"
+   text-time="2012-11-08T09:12:09.995376Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="fd36cc905f4ff249732d9fe9a5700618"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.729742Z"/>
+<entry
+   committed-rev="677"
+   name="transactvalidmod10.css.scss"
+   text-time="2012-11-08T09:12:09.995376Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="e36c0f6fbc2d9a4ee2261397bc6ce3e5"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.729742Z"/>
+<entry
+   committed-rev="694"
+   name="managecheckinfo.css.scss"
+   text-time="2012-11-08T09:12:09.995376Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="79ef1f70384dca99737b9cf41835a91a"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.729742Z"/>
+<entry
+   committed-rev="677"
+   name="transactprocessebtcard.css.scss"
+   text-time="2012-11-08T09:12:10.011001Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="5f3e003ce367422afbaa80a23710f7db"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.745368Z"/>
+<entry
+   committed-rev="678"
+   name="main.css"
+   text-time="2012-11-08T09:12:10.042252Z"
+   committed-date="2012-11-01T23:07:28.022148Z"
+   checksum="099f98a6c1e2fc4c1a99a926ff3d38fc"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.760993Z"/>
+<entry
+   committed-rev="677"
+   name="transactvalidexpdate.css.scss"
+   text-time="2012-11-08T09:12:10.042252Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="43ac17368e1864c2f0665624b0ea4249"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.760993Z"/>
+<entry
+   committed-rev="697"
+   name="getchecktrx.css.scss"
+   text-time="2012-11-08T09:12:10.042252Z"
+   committed-date="2012-11-03T18:03:57.797416Z"
+   checksum="40c8850a55a7722f2642122f821c4481"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.760993Z"/>
+<entry
+   committed-rev="677"
+   name="transactprocesscheck.css.scss"
+   text-time="2012-11-08T09:12:10.057878Z"
+   committed-date="2012-11-01T23:00:20.227765Z"
+   checksum="993fa18bbc9558a08da15eb801017b5d"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.776619Z"/>
+<entry
+   committed-rev="694"
+   name="webserviceresponse.css.scss"
+   text-time="2012-11-08T09:12:10.057878Z"
+   committed-date="2012-11-03T13:44:49.530980Z"
+   checksum="99f8ed972927bfd1611bbef8c314855f"
+   last-author="sachin.deshmukh"
+   kind="file"
+   prop-time="2012-11-08T09:12:09.776619Z"/>
+</wc-entries>
